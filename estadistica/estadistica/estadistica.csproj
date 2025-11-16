@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{25AC68BA-C0AA-41FD-9CC2-9EFEB35A6055}</ProjectGuid>
+    <ProjectGuid>{94B3235D-C5C7-477D-95D5-5AA548F0871B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Converfrm</RootNamespace>
-    <AssemblyName>Converfrm</AssemblyName>
+    <RootNamespace>estadistica</RootNamespace>
+    <AssemblyName>estadistica</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

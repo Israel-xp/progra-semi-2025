@@ -1,0 +1,10 @@
+C:\Users\holman\source\repos\estadistica\estadistica\bin\Debug\estadistica.exe.config
+C:\Users\holman\source\repos\estadistica\estadistica\bin\Debug\estadistica.exe
+C:\Users\holman\source\repos\estadistica\estadistica\bin\Debug\estadistica.pdb
+C:\Users\holman\source\repos\estadistica\estadistica\obj\Debug\estadistica.csproj.AssemblyReference.cache
+C:\Users\holman\source\repos\estadistica\estadistica\obj\Debug\estadistica.Form1.resources
+C:\Users\holman\source\repos\estadistica\estadistica\obj\Debug\estadistica.Properties.Resources.resources
+C:\Users\holman\source\repos\estadistica\estadistica\obj\Debug\estadistica.csproj.GenerateResource.cache
+C:\Users\holman\source\repos\estadistica\estadistica\obj\Debug\estadistica.csproj.CoreCompileInputs.cache
+C:\Users\holman\source\repos\estadistica\estadistica\obj\Debug\estadistica.exe
+C:\Users\holman\source\repos\estadistica\estadistica\obj\Debug\estadistica.pdb

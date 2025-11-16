@@ -8,10 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Converfrm.Properties
+
+namespace estadistica.Properties
 {
-
-
     /// <summary>
     ///   Clase de recurso fuertemente tipado para buscar cadenas traducidas, etc.
     /// </summary>
@@ -44,7 +43,7 @@ namespace Converfrm.Properties
             {
                 if ((resourceMan == null))
                 {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Converfrm.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("estadistica.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
