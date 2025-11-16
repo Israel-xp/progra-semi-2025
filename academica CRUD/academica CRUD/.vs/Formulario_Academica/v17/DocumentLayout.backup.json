@@ -1,0 +1,136 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\sharo\\Music\\trabajos de progra\\Academica CRUD\\academica CRUD\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{544DAFBF-B612-4A43-9748-436A7877D931}|frm_academica\\FormuCRUD.csproj|c:\\users\\sharo\\music\\trabajos de progra\\academica crud\\academica crud\\frm_academica\\frmmaterias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{544DAFBF-B612-4A43-9748-436A7877D931}|frm_academica\\FormuCRUD.csproj|solutionrelative:frm_academica\\frmmaterias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{544DAFBF-B612-4A43-9748-436A7877D931}|frm_academica\\FormuCRUD.csproj|C:\\Users\\sharo\\Music\\trabajos de progra\\Academica CRUD\\academica CRUD\\frm_academica\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{544DAFBF-B612-4A43-9748-436A7877D931}|frm_academica\\FormuCRUD.csproj|solutionrelative:frm_academica\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{544DAFBF-B612-4A43-9748-436A7877D931}|frm_academica\\FormuCRUD.csproj|C:\\Users\\sharo\\Music\\trabajos de progra\\Academica CRUD\\academica CRUD\\frm_academica\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{544DAFBF-B612-4A43-9748-436A7877D931}|frm_academica\\FormuCRUD.csproj|solutionrelative:frm_academica\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{544DAFBF-B612-4A43-9748-436A7877D931}|frm_academica\\FormuCRUD.csproj|C:\\Users\\sharo\\Music\\trabajos de progra\\Academica CRUD\\academica CRUD\\frm_academica\\fmrdocente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{544DAFBF-B612-4A43-9748-436A7877D931}|frm_academica\\FormuCRUD.csproj|solutionrelative:frm_academica\\fmrdocente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{544DAFBF-B612-4A43-9748-436A7877D931}|frm_academica\\FormuCRUD.csproj|C:\\Users\\sharo\\Music\\trabajos de progra\\Academica CRUD\\academica CRUD\\frm_academica\\fmrdocente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{544DAFBF-B612-4A43-9748-436A7877D931}|frm_academica\\FormuCRUD.csproj|solutionrelative:frm_academica\\fmrdocente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{544DAFBF-B612-4A43-9748-436A7877D931}|frm_academica\\FormuCRUD.csproj|C:\\Users\\sharo\\Music\\trabajos de progra\\Academica CRUD\\academica CRUD\\frm_academica\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{544DAFBF-B612-4A43-9748-436A7877D931}|frm_academica\\FormuCRUD.csproj|solutionrelative:frm_academica\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{544DAFBF-B612-4A43-9748-436A7877D931}|frm_academica\\FormuCRUD.csproj|C:\\Users\\sharo\\Music\\trabajos de progra\\Academica CRUD\\academica CRUD\\frm_academica\\frmperiodos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{544DAFBF-B612-4A43-9748-436A7877D931}|frm_academica\\FormuCRUD.csproj|solutionrelative:frm_academica\\frmperiodos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 193,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\sharo\\Music\\trabajos de progra\\Academica CRUD\\academica CRUD\\frm_academica\\Form1.cs",
+              "RelativeDocumentMoniker": "frm_academica\\Form1.cs",
+              "ToolTip": "C:\\Users\\sharo\\Music\\trabajos de progra\\Academica CRUD\\academica CRUD\\frm_academica\\Form1.cs",
+              "RelativeToolTip": "frm_academica\\Form1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T03:00:32.848Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "fmrDocente.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\sharo\\Music\\trabajos de progra\\Academica CRUD\\academica CRUD\\frm_academica\\fmrDocente.cs",
+              "RelativeDocumentMoniker": "frm_academica\\fmrDocente.cs",
+              "ToolTip": "C:\\Users\\sharo\\Music\\trabajos de progra\\creaci\u00F3n del CRUD\\academica CRUD\\frm_academica\\fmrDocente.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\creaci\u00F3n del CRUD\\academica CRUD\\frm_academica\\fmrDocente.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T02:59:56.614Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\sharo\\Music\\trabajos de progra\\Academica CRUD\\academica CRUD\\frm_academica\\Form1.cs",
+              "RelativeDocumentMoniker": "frm_academica\\Form1.cs",
+              "ToolTip": "C:\\Users\\sharo\\Music\\trabajos de progra\\creaci\u00F3n del CRUD\\academica CRUD\\frm_academica\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\creaci\u00F3n del CRUD\\academica CRUD\\frm_academica\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T02:59:53.544Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmMaterias.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\sharo\\Music\\trabajos de progra\\Academica CRUD\\academica CRUD\\frm_academica\\frmMaterias.cs",
+              "RelativeDocumentMoniker": "frm_academica\\frmMaterias.cs",
+              "ToolTip": "C:\\Users\\sharo\\Music\\trabajos de progra\\Academica CRUD\\academica CRUD\\frm_academica\\frmMaterias.cs [Dise\u00F1o]",
+              "RelativeToolTip": "frm_academica\\frmMaterias.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T02:59:59.738Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "frmPeriodos.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\sharo\\Music\\trabajos de progra\\Academica CRUD\\academica CRUD\\frm_academica\\frmPeriodos.cs",
+              "RelativeDocumentMoniker": "frm_academica\\frmPeriodos.cs",
+              "ToolTip": "C:\\Users\\sharo\\Music\\trabajos de progra\\creaci\u00F3n del CRUD\\academica CRUD\\frm_academica\\frmPeriodos.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\creaci\u00F3n del CRUD\\academica CRUD\\frm_academica\\frmPeriodos.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T03:00:01.168Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "frmPrincipal.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\sharo\\Music\\trabajos de progra\\Academica CRUD\\academica CRUD\\frm_academica\\frmPrincipal.cs",
+              "RelativeDocumentMoniker": "frm_academica\\frmPrincipal.cs",
+              "ToolTip": "C:\\Users\\sharo\\Music\\trabajos de progra\\creaci\u00F3n del CRUD\\academica CRUD\\frm_academica\\frmPrincipal.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\creaci\u00F3n del CRUD\\academica CRUD\\frm_academica\\frmPrincipal.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T03:00:02.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "fmrDocente.cs",
+              "DocumentMoniker": "C:\\Users\\sharo\\Music\\trabajos de progra\\Academica CRUD\\academica CRUD\\frm_academica\\fmrDocente.cs",
+              "RelativeDocumentMoniker": "frm_academica\\fmrDocente.cs",
+              "ToolTip": "C:\\Users\\sharo\\Music\\trabajos de progra\\Academica CRUD\\academica CRUD\\frm_academica\\fmrDocente.cs",
+              "RelativeToolTip": "frm_academica\\fmrDocente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T03:00:16.623Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

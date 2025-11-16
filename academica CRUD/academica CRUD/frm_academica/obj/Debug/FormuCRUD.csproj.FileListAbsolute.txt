@@ -1,0 +1,66 @@
+C:\Users\sharo\Music\trabajos de progra\creación del CRUD\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\DB_academica.mdf
+C:\Users\sharo\Music\trabajos de progra\creación del CRUD\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\DB_academica_log.ldf
+C:\Users\sharo\Music\trabajos de progra\creación del CRUD\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\sharo\Music\trabajos de progra\creación del CRUD\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\sharo\Music\trabajos de progra\creación del CRUD\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\sharo\Music\trabajos de progra\creación del CRUD\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\FormuCRUD.csproj.AssemblyReference.cache
+C:\Users\sharo\Music\trabajos de progra\creación del CRUD\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\sharo\Music\trabajos de progra\creación del CRUD\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\sharo\Music\trabajos de progra\creación del CRUD\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\FormuCRUD.csproj.GenerateResource.cache
+C:\Users\sharo\Music\trabajos de progra\creación del CRUD\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\FormuCRUD.csproj.CoreCompileInputs.cache
+C:\Users\sharo\Music\trabajos de progra\creación del CRUD\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\sharo\Music\trabajos de progra\creación del CRUD\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\sharo\Music\trabajos de progra\creación del CRUD\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmPrincipal.resources
+C:\Users\sharo\Music\trabajos de progra\creación del CRUD\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmMaterias.resources
+C:\Users\sharo\Music\trabajos de progra\creación del CRUD\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmPeriodos.resources
+C:\Users\sharo\Music\trabajos de progra\creación del CRUD\academica CRUD\WindowsFormsApp1\bin\Debug\DB_academica.mdf
+C:\Users\sharo\Music\trabajos de progra\creación del CRUD\academica CRUD\WindowsFormsApp1\bin\Debug\DB_academica_log.ldf
+C:\Users\sharo\Music\trabajos de progra\creación del CRUD\academica CRUD\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\sharo\Music\trabajos de progra\creación del CRUD\academica CRUD\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\sharo\Music\trabajos de progra\creación del CRUD\academica CRUD\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\sharo\Music\trabajos de progra\creación del CRUD\academica CRUD\WindowsFormsApp1\obj\Debug\FormuCRUD.csproj.AssemblyReference.cache
+C:\Users\sharo\Music\trabajos de progra\creación del CRUD\academica CRUD\WindowsFormsApp1\obj\Debug\Formulario_Academica.Form1.resources
+C:\Users\sharo\Music\trabajos de progra\creación del CRUD\academica CRUD\WindowsFormsApp1\obj\Debug\Formulario_Academica.frmMaterias.resources
+C:\Users\sharo\Music\trabajos de progra\creación del CRUD\academica CRUD\WindowsFormsApp1\obj\Debug\Formulario_Academica.frmPeriodos.resources
+C:\Users\sharo\Music\trabajos de progra\creación del CRUD\academica CRUD\WindowsFormsApp1\obj\Debug\Formulario_Academica.frmPrincipal.resources
+C:\Users\sharo\Music\trabajos de progra\creación del CRUD\academica CRUD\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\sharo\Music\trabajos de progra\creación del CRUD\academica CRUD\WindowsFormsApp1\obj\Debug\FormuCRUD.csproj.GenerateResource.cache
+C:\Users\sharo\Music\trabajos de progra\creación del CRUD\academica CRUD\WindowsFormsApp1\obj\Debug\FormuCRUD.csproj.CoreCompileInputs.cache
+C:\Users\sharo\Music\trabajos de progra\creación del CRUD\academica CRUD\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\sharo\Music\trabajos de progra\creación del CRUD\academica CRUD\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\sharo\Music\trabajos de progra\creación del CRUD\academica CRUD\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fmrDocente.resources
+C:\Users\sharo\Music\trabajos de progra\creación del CRUD\academica CRUD\frm_academica\bin\Debug\DB_academica.mdf
+C:\Users\sharo\Music\trabajos de progra\creación del CRUD\academica CRUD\frm_academica\bin\Debug\DB_academica_log.ldf
+C:\Users\sharo\Music\trabajos de progra\creación del CRUD\academica CRUD\frm_academica\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\sharo\Music\trabajos de progra\creación del CRUD\academica CRUD\frm_academica\bin\Debug\WindowsFormsApp1.exe
+C:\Users\sharo\Music\trabajos de progra\creación del CRUD\academica CRUD\frm_academica\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\sharo\Music\trabajos de progra\creación del CRUD\academica CRUD\frm_academica\obj\Debug\FormuCRUD.csproj.AssemblyReference.cache
+C:\Users\sharo\Music\trabajos de progra\creación del CRUD\academica CRUD\frm_academica\obj\Debug\WindowsFormsApp1.fmrDocente.resources
+C:\Users\sharo\Music\trabajos de progra\creación del CRUD\academica CRUD\frm_academica\obj\Debug\Formulario_Academica.Form1.resources
+C:\Users\sharo\Music\trabajos de progra\creación del CRUD\academica CRUD\frm_academica\obj\Debug\Formulario_Academica.frmMaterias.resources
+C:\Users\sharo\Music\trabajos de progra\creación del CRUD\academica CRUD\frm_academica\obj\Debug\Formulario_Academica.frmPeriodos.resources
+C:\Users\sharo\Music\trabajos de progra\creación del CRUD\academica CRUD\frm_academica\obj\Debug\Formulario_Academica.frmPrincipal.resources
+C:\Users\sharo\Music\trabajos de progra\creación del CRUD\academica CRUD\frm_academica\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\sharo\Music\trabajos de progra\creación del CRUD\academica CRUD\frm_academica\obj\Debug\FormuCRUD.csproj.GenerateResource.cache
+C:\Users\sharo\Music\trabajos de progra\creación del CRUD\academica CRUD\frm_academica\obj\Debug\FormuCRUD.csproj.CoreCompileInputs.cache
+C:\Users\sharo\Music\trabajos de progra\creación del CRUD\academica CRUD\frm_academica\obj\Debug\WindowsFormsApp1.exe
+C:\Users\sharo\Music\trabajos de progra\creación del CRUD\academica CRUD\frm_academica\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\sharo\Music\trabajos de progra\Academica CRUD\academica CRUD\frm_academica\bin\Debug\DB_academica.mdf
+C:\Users\sharo\Music\trabajos de progra\Academica CRUD\academica CRUD\frm_academica\bin\Debug\DB_academica_log.ldf
+C:\Users\sharo\Music\trabajos de progra\Academica CRUD\academica CRUD\frm_academica\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\sharo\Music\trabajos de progra\Academica CRUD\academica CRUD\frm_academica\bin\Debug\WindowsFormsApp1.exe
+C:\Users\sharo\Music\trabajos de progra\Academica CRUD\academica CRUD\frm_academica\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\sharo\Music\trabajos de progra\Academica CRUD\academica CRUD\frm_academica\obj\Debug\FormuCRUD.csproj.AssemblyReference.cache
+C:\Users\sharo\Music\trabajos de progra\Academica CRUD\academica CRUD\frm_academica\obj\Debug\WindowsFormsApp1.fmrDocente.resources
+C:\Users\sharo\Music\trabajos de progra\Academica CRUD\academica CRUD\frm_academica\obj\Debug\Formulario_Academica.Form1.resources
+C:\Users\sharo\Music\trabajos de progra\Academica CRUD\academica CRUD\frm_academica\obj\Debug\Formulario_Academica.frmMaterias.resources
+C:\Users\sharo\Music\trabajos de progra\Academica CRUD\academica CRUD\frm_academica\obj\Debug\Formulario_Academica.frmPeriodos.resources
+C:\Users\sharo\Music\trabajos de progra\Academica CRUD\academica CRUD\frm_academica\obj\Debug\Formulario_Academica.frmPrincipal.resources
+C:\Users\sharo\Music\trabajos de progra\Academica CRUD\academica CRUD\frm_academica\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\sharo\Music\trabajos de progra\Academica CRUD\academica CRUD\frm_academica\obj\Debug\FormuCRUD.csproj.GenerateResource.cache
+C:\Users\sharo\Music\trabajos de progra\Academica CRUD\academica CRUD\frm_academica\obj\Debug\FormuCRUD.csproj.CoreCompileInputs.cache
+C:\Users\sharo\Music\trabajos de progra\Academica CRUD\academica CRUD\frm_academica\obj\Debug\WindowsFormsApp1.exe
+C:\Users\sharo\Music\trabajos de progra\Academica CRUD\academica CRUD\frm_academica\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\holman\Downloads\academica CRUD\academica CRUD\frm_academica\obj\Debug\FormuCRUD.csproj.AssemblyReference.cache
+C:\Users\holman\Downloads\academica CRUD\academica CRUD\frm_academica\obj\Debug\WindowsFormsApp1.exe
+C:\Users\holman\Downloads\academica CRUD\academica CRUD\frm_academica\obj\Debug\WindowsFormsApp1.pdb
