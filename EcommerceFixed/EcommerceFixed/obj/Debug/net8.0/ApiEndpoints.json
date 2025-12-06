@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "EcommerceFixed.Controllers.ChatController",
+    "Method": "Preguntar",
+    "RelativePath": "api/Chat/preguntar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "EcommerceFixed.Controllers.ChatRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

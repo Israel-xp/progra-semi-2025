@@ -1,0 +1,752 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using Microsoft.EntityFrameworkCore
+@using EcommerceFixed.Data
+@using EcommerceFixed.Models
+@using EcommerceFixed.Helpers
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+@inject ApplicationDbContext _context
+
+@{
+    // --- LÓGICA DE DATOS GLOBAL ---
+    int cartItemsCount = 0;
+    int wishlistItemsCount = 0;
+    decimal cartTotal = 0;
+    ApplicationUser? user = null;
+    List<Product> cartProducts = new List<Product>();
+
+    // Datos para menús dinámicos
+    List<Category> navbarCategories = new List<Category>();
+    int ofertasCount = 0;
+
+    try
+    {
+        // 1. Cargar Categorías
+        navbarCategories = _context.Categories.OrderBy(c => c.Name).ToList();
+
+        // 2. Contar ofertas activas
+        ofertasCount = _context.Products.Count(p => p.Discount > 0);
+
+        // 3. Datos del Usuario Logueado
+        if (SignInManager.IsSignedIn(User))
+        {
+            user = await UserManager.GetUserAsync(User);
+            if (user != null)
+            {
+                wishlistItemsCount = WishlistHelper.GetWishlistItemCount(user.Id, _context);
+                cartItemsCount = CartHelper.GetCartItemsCountDb(user.Id, _context);
+                cartProducts = CartHelper.GetGroupedCartItemsDb(user.Id, _context);
+                cartTotal = CartHelper.GetCartTotalDb(user.Id, _context);
+            }
+        }
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Error en Layout: {ex.Message}");
+    }
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - URBAN TRENDS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    @RenderSection("Styles", required: false)
+
+    <style>
+        :root {
+            --primary-dark: #121212;
+            --accent-gold: #D4AF37;
+            --accent-red: #e74c3c;
+            --text-main: #212529;
+            --bg-light: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            padding-top: 100px;
+            background-color: #fff;
+            color: var(--text-main);
+        }
+
+        /* === NAVBAR MEJORADO === */
+        .navbar-main {
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0,0,0,0.08);
+            padding: 0.8rem 0;
+        }
+
+        .brand-text {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            font-size: 1.6rem;
+            color: var(--primary-dark);
+            letter-spacing: -0.5px;
+        }
+
+        .nav-link-custom {
+            font-weight: 500;
+            font-size: 0.95rem;
+            color: var(--text-main);
+            padding: 0.5rem 1.2rem !important;
+            border-radius: 8px;
+            transition: all 0.2s;
+        }
+
+            .nav-link-custom:hover {
+                color: var(--accent-gold);
+                background: rgba(212, 175, 55, 0.05);
+            }
+
+        .nav-link-ofertas {
+            color: var(--accent-red) !important;
+            font-weight: 600;
+        }
+
+            .nav-link-ofertas:hover {
+                background: rgba(231, 76, 60, 0.05);
+            }
+
+        /* Buscador Global */
+        .search-group {
+            position: relative;
+            width: 300px;
+        }
+
+        .search-input {
+            border-radius: 50px;
+            padding-left: 20px;
+            padding-right: 40px;
+            border: 1px solid #ddd;
+            background: var(--bg-light);
+            font-size: 0.9rem;
+        }
+
+            .search-input:focus {
+                border-color: var(--accent-gold);
+                box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+                background: #fff;
+            }
+
+        .search-btn {
+            position: absolute;
+            right: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+            border: none;
+            background: transparent;
+            color: var(--primary-dark);
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+            .search-btn:hover {
+                color: var(--accent-gold);
+            }
+
+        /* Auth & Icons */
+        .btn-auth-login {
+            color: var(--primary-dark);
+            border: 1px solid var(--primary-dark);
+            border-radius: 50px;
+            padding: 0.4rem 1.2rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+            .btn-auth-login:hover {
+                background: var(--bg-light);
+            }
+
+        .btn-auth-register {
+            background: var(--primary-dark);
+            color: #fff;
+            border: 1px solid var(--primary-dark);
+            border-radius: 50px;
+            padding: 0.4rem 1.2rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+            .btn-auth-register:hover {
+                background: var(--accent-gold);
+                border-color: var(--accent-gold);
+                color: #000;
+            }
+
+        .icon-action {
+            font-size: 1.4rem;
+            color: var(--primary-dark);
+            position: relative;
+            transition: 0.2s;
+        }
+
+            .icon-action:hover {
+                color: var(--accent-gold);
+                transform: scale(1.1);
+            }
+
+        .badge-notification {
+            position: absolute;
+            top: -2px;
+            right: -5px;
+            background: var(--accent-gold);
+            color: #000;
+            font-size: 0.65rem;
+            font-weight: 800;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #fff;
+        }
+
+        /* Dropdowns */
+        .dropdown-menu-custom {
+            border: none;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            border-radius: 12px;
+            padding: 10px;
+            margin-top: 15px !important;
+        }
+
+        .dropdown-item {
+            border-radius: 8px;
+            padding: 8px 15px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #555;
+        }
+
+            .dropdown-item:hover {
+                background: var(--bg-light);
+                color: var(--accent-gold);
+                padding-left: 20px;
+                transition: 0.2s;
+            }
+
+        @@media (max-width: 991px) {
+            body
+
+        {
+            padding-top: 80px;
+        }
+
+        .search-group {
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        .btn-auth-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .btn-auth-login, .btn-auth-register {
+            width: 100%;
+            text-align: center;
+        }
+
+        }
+
+        /* =========================================
+                   🤖 ESTILOS DEL CHATBOT (MEJORADOS)
+                   ========================================= */
+        .chat-toggle-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: #121212;
+            color: #D4AF37;
+            border: 2px solid #D4AF37;
+            border-radius: 50%;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            z-index: 2000;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            transition: all 0.3s;
+        }
+
+            .chat-toggle-btn:hover {
+                transform: scale(1.1) rotate(10deg);
+            }
+
+        .chat-window {
+            position: fixed;
+            bottom: 100px;
+            right: 30px;
+            width: 350px;
+            height: 500px;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+            z-index: 2000;
+            display: none;
+            flex-direction: column;
+            overflow: hidden;
+            border: 1px solid #eee;
+            animation: slideUp 0.3s ease;
+        }
+        @@keyframes slideUp {
+            from
+
+        {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        }
+
+        .chat-header {
+            background: #121212;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .chat-body {
+            flex: 1;
+            padding: 15px;
+            overflow-y: auto;
+            background: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .message {
+            max-width: 85%;
+            padding: 10px 14px;
+            border-radius: 12px;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
+            .message.bot {
+                align-self: flex-start;
+                background: white;
+                border: 1px solid #eee;
+                border-left: 3px solid #D4AF37;
+            }
+
+            .message.user {
+                align-self: flex-end;
+                background: #121212;
+                color: white;
+            }
+
+        /* ✅ NUEVO: Tarjeta de Producto COMPACTA (Horizontal) */
+        .chat-product {
+            background: white;
+            border: 1px solid #f0f0f0;
+            border-radius: 12px;
+            margin-top: 5px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex; /* Diseño horizontal */
+            align-items: center;
+            padding: 8px;
+            gap: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+        }
+
+            .chat-product:hover {
+                transform: translateX(5px);
+                border-color: #D4AF37;
+                box-shadow: 0 4px 10px rgba(212, 175, 55, 0.15);
+            }
+
+            .chat-product img {
+                width: 50px; /* Tamaño fijo pequeño */
+                height: 50px;
+                object-fit: cover;
+                border-radius: 8px;
+                flex-shrink: 0;
+            }
+
+        .chat-product-info {
+            flex-grow: 1;
+            overflow: hidden;
+        }
+
+        .chat-prod-title {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #333;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-bottom: 2px;
+        }
+
+        .chat-prod-price {
+            font-size: 0.8rem;
+            color: #D4AF37;
+            font-weight: 700;
+        }
+
+        .chat-prod-arrow {
+            font-size: 0.8rem;
+            color: #ccc;
+        }
+
+        .chat-footer {
+            padding: 10px;
+            background: white;
+            border-top: 1px solid #eee;
+            display: flex;
+            gap: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-main fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="/">
+                <i class="bi bi-stars" style="color: var(--accent-gold);"></i>
+                <span class="brand-text">URBAN TRENDS</span>
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navContent">
+                <ul class="navbar-nav mx-auto align-items-center gap-1">
+                    <li class="nav-item"><a class="nav-link-custom" href="/products">Tienda</a></li>
+                    @if (ofertasCount > 0)
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link-custom nav-link-ofertas" href="/products?OnSale=true"><i class="bi bi-fire me-1"></i>Ofertas</a>
+                        </li>
+                    }
+                    <li class="nav-item dropdown">
+                        <a class="nav-link-custom dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Colecciones</a>
+                        <ul class="dropdown-menu dropdown-menu-custom">
+                            <li><a class="dropdown-item" href="/products?Gender=Mujer">👩 Mujer</a></li>
+                            <li><a class="dropdown-item" href="/products?Gender=Hombre">👨 Hombre</a></li>
+                            <li><a class="dropdown-item" href="/products?Gender=Unisex">✨ Unisex</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link-custom dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Categorías</a>
+                        <ul class="dropdown-menu dropdown-menu-custom" style="min-width: 200px;">
+                            @if (navbarCategories.Any())
+                            {
+                                @foreach (var cat in navbarCategories)
+                                {
+                                    <li><a class="dropdown-item" href="/products?CategoryId=@cat.Id">@cat.Name</a></li>
+                                }
+                            }
+                            else
+                            {
+                                <li><span class="dropdown-item text-muted">Cargando...</span></li>
+                            }
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="d-flex flex-column flex-lg-row align-items-center gap-3">
+                    <form action="/products" method="get" class="search-group">
+                        <input type="text" name="SearchTerm" class="form-control search-input" placeholder="Buscar prenda..." value="@Context.Request.Query["SearchTerm"]">
+                        <button type="submit" class="search-btn"><i class="bi bi-search"></i></button>
+                    </form>
+
+                    <div class="d-flex align-items-center gap-3">
+                        <a href="/wishlist" class="icon-action" title="Favoritos">
+                            <i class="bi bi-heart"></i>
+                            @if (wishlistItemsCount > 0)
+                            {
+                                <span class="badge-notification">@wishlistItemsCount</span>
+                            }
+                        </a>
+                        <button class="icon-action bg-transparent border-0" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas">
+                            <i class="bi bi-bag"></i>
+                            @if (cartItemsCount > 0)
+                            {
+                                <span class="badge-notification">@cartItemsCount</span>
+                            }
+                        </button>
+
+                        @if (SignInManager.IsSignedIn(User))
+                        {
+                            <div class="dropdown">
+                                <a href="#" class="d-block text-decoration-none" data-bs-toggle="dropdown">
+                                    @if (user != null && !string.IsNullOrEmpty(user.ProfilePicture))
+                                    {
+                                        <img src="@user.ProfilePicture" class="rounded-circle" style="width: 35px; height: 35px; object-fit: cover; border: 2px solid var(--accent-gold);" alt="User">
+                                    }
+                                    else
+                                    {
+                                        <i class="bi bi-person-circle icon-action"></i>
+                                    }
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-custom">
+                                    <li><span class="dropdown-header">Hola, @(user?.FirstName ?? "Usuario")</span></li>
+                                    <li><a class="dropdown-item" href="/Profile/Edit">Mi Perfil</a></li>
+                                    <li><a class="dropdown-item" href="/myorders">Mis Pedidos</a></li>
+                                    @if (User.IsInRole("Admin"))
+                                    {
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item text-danger" href="/admin">Panel Admin</a></li>
+                                    }
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li>
+                                        <form asp-page="/Account/Logout" method="post">
+                                            <button type="submit" class="dropdown-item">Cerrar Sesión</button>
+                                        </form>
+                                    </li>
+                                </ul>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="d-flex gap-2 btn-auth-container">
+                                <a href="/Account/Login" class="btn-auth-login text-decoration-none">Ingresar</a>
+                                <a href="/Account/Register" class="btn-auth-register text-decoration-none">Registrarse</a>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" style="min-height: 80vh;">
+        <div class="alert-container">
+            @if (TempData["success"] != null)
+            {
+                <div class="alert alert-success alert-dismissible fade show shadow-sm border-0"><i class="bi bi-check-circle-fill me-2"></i>@TempData["success"]<button type="button" class="btn-close" data-bs-dismiss="alert"></button></div>
+            }
+            @if (TempData["error"] != null)
+            {
+                <div class="alert alert-danger alert-dismissible fade show shadow-sm border-0"><i class="bi bi-exclamation-circle-fill me-2"></i>@TempData["error"]<button type="button" class="btn-close" data-bs-dismiss="alert"></button></div>
+            }
+        </div>
+        @RenderBody()
+    </div>
+
+    <footer class="bg-light py-5 mt-5 border-top">
+        <div class="container text-center text-muted">
+            <h5 class="brand-text mb-3" style="font-size: 1.2rem;">URBAN TRENDS</h5>
+            <p class="small mb-4">Tu estilo, tu esencia. Moda inteligente.</p>
+            <div class="d-flex justify-content-center gap-3 mb-4">
+                <a href="#" class="text-dark fs-5"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="text-dark fs-5"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-dark fs-5"><i class="bi bi-tiktok"></i></a>
+            </div>
+            <small>&copy; @DateTime.Now.Year Urban Trends. Todos los derechos reservados.</small>
+        </div>
+    </footer>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas" style="width: 400px;">
+        <div class="offcanvas-header border-bottom">
+            <h5 class="offcanvas-title fw-bold">Tu Carrito (@cartItemsCount)</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column">
+            @if (cartProducts.Any())
+            {
+                <div class="flex-grow-1 overflow-auto">
+                    @foreach (var p in cartProducts)
+                    {
+                        var qty = CartHelper.GetProductQuantityInCart(p.Id, user?.Id, _context);
+                        <div class="d-flex gap-3 mb-3 pb-3 border-bottom">
+                            <img src="@p.ImageLocation" style="width: 70px; height: 70px; object-fit: cover; border-radius: 8px;">
+                            <div class="flex-grow-1">
+                                <h6 class="mb-1 text-truncate" style="max-width: 180px;">@p.Name</h6>
+                                <div class="d-flex justify-content-between">
+                                    <small class="text-muted">Cant: @qty</small>
+                                    <span class="fw-bold text-warning">$@p.PriceAfterDiscount.ToString("N2")</span>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+                <div class="mt-3">
+                    <div class="d-flex justify-content-between mb-3">
+                        <span class="h5">Total</span>
+                        <span class="h4 fw-bold text-warning">$@cartTotal.ToString("N2")</span>
+                    </div>
+                    <a href="/checkout" class="btn btn-dark w-100 py-2 rounded-pill mb-2">Pagar Ahora</a>
+                    <a href="/cart" class="btn btn-outline-dark w-100 py-2 rounded-pill border-0">Ver Bolsa</a>
+                </div>
+            }
+            else
+            {
+                <div class="text-center my-auto">
+                    <i class="bi bi-bag display-4 text-muted mb-3 opacity-25"></i>
+                    <p>Tu bolsa está vacía</p>
+                    <a href="/products" class="btn btn-dark rounded-pill btn-sm">Ir a comprar</a>
+                </div>
+            }
+        </div>
+    </div>
+
+    <div class="chat-toggle-btn" onclick="toggleChat()">
+        <i class="bi bi-stars"></i>
+    </div>
+
+    <div class="chat-window" id="chatWindow">
+        <div class="chat-header">
+            <div>
+                <strong>Urban AI</strong><br>
+                <small style="font-size: 0.7em;">Styling Assistant</small>
+            </div>
+            <button type="button" class="btn-close btn-close-white" onclick="toggleChat()"></button>
+        </div>
+
+        <div class="chat-body" id="chatBody">
+            <div class="message bot">
+                ¡Hola! 👋 Soy tu estilista IA.
+                <br><br>
+                Dime qué vibe buscas o si quieres combinar algo.
+            </div>
+        </div>
+
+        <div class="chat-footer">
+            <input type="text" id="chatInput" class="form-control border-0 bg-light" placeholder="Escribe aquí..." onkeypress="handleEnter(event)">
+            <button class="btn btn-dark rounded-circle" onclick="sendMessage()" style="width: 35px; height: 35px; display: flex; align-items: center; justify-content: center;">
+                <i class="bi bi-send-fill" style="font-size: 0.8rem;"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Auto-close alerts
+        setTimeout(() => document.querySelectorAll('.alert').forEach(a => new bootstrap.Alert(a).close()), 5000);
+
+        // --- LÓGICA DEL BOT INTELIGENTE ---
+        function toggleChat() {
+            const win = document.getElementById('chatWindow');
+            win.style.display = (win.style.display === 'flex') ? 'none' : 'flex';
+            if(win.style.display === 'flex') document.getElementById('chatInput').focus();
+        }
+
+        function handleEnter(e) { if (e.key === 'Enter') sendMessage(); }
+
+        // 1. Detectar qué estás viendo (Contexto)
+        function detectContext() {
+            const idInput = document.getElementById('meta-product-id');
+            const catInput = document.getElementById('meta-product-cat');
+            if (idInput && catInput) {
+                return { currentProductId: parseInt(idInput.value), currentCategory: catInput.value };
+            }
+            return { currentProductId: null, currentCategory: null };
+        }
+
+        async function sendMessage() {
+            const input = document.getElementById('chatInput');
+            const text = input.value.trim();
+            if (!text) return;
+
+            appendMessage(text, 'user');
+            input.value = '';
+
+            const loadId = 'loading-' + Date.now();
+            const loader = document.createElement('div');
+            loader.className = 'message bot text-muted fst-italic';
+            loader.id = loadId;
+            loader.innerText = 'Analizando estilos...';
+            document.getElementById('chatBody').appendChild(loader);
+            scrollToBottom();
+
+            // 2. Obtener el contexto actual
+            const context = detectContext();
+
+            try {
+                // 3. Enviar Mensaje + Contexto al Backend
+                const res = await fetch('/api/chat/preguntar', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({
+                        message: text,
+                        currentProductId: context.currentProductId,
+                        currentCategory: context.currentCategory
+                    })
+                });
+                const data = await res.json();
+                document.getElementById(loadId).remove();
+
+                appendMessage(data.reply, 'bot');
+                if(data.products) data.products.forEach(p => appendProduct(p));
+
+            } catch(e) {
+                document.getElementById(loadId).innerText = 'Error de conexión 😓';
+            }
+        }
+
+        function appendMessage(text, sender) {
+            const div = document.createElement('div');
+            div.className = `message ${sender}`;
+            div.innerHTML = text;
+            document.getElementById('chatBody').appendChild(div);
+            scrollToBottom();
+        }
+
+        // ✅ FUNCIÓN DE RENDERIZADO (TARJETA COMPACTA)
+        function appendProduct(p) {
+            const div = document.createElement('div');
+            div.className = 'chat-product'; // Usa el nuevo CSS horizontal
+            div.innerHTML = `
+                <img src="${p.imageLocation}" alt="${p.name}">
+                <div class="chat-product-info">
+                    <div class="chat-prod-title">${p.name}</div>
+                    <div class="chat-prod-price">$${p.price.toFixed(2)}</div>
+                </div>
+                <div class="chat-prod-arrow"><i class="bi bi-chevron-right"></i></div>
+            `;
+            // ✅ LINK CORREGIDO: Usa la ruta /Details/5
+            div.onclick = () => window.location.href = `/products/Details/${p.id}`;
+
+            document.getElementById('chatBody').appendChild(div);
+            scrollToBottom();
+        }
+
+        function scrollToBottom() {
+            const b = document.getElementById('chatBody');
+            b.scrollTop = b.scrollHeight;
+        }
+    </script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

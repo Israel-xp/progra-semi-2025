@@ -1,0 +1,28 @@
+﻿@page
+@model EcommerceFixed.Pages.TestModel
+@{
+    ViewData["Title"] = "Test Page";
+}
+
+<h1>🔧 Página de Prueba</h1>
+
+<h3>Probar Registro Directo</h3>
+<form method="post" asp-page-handler="TestRegister">
+    <button type="submit" style="background: green; color: white; padding: 10px;">
+        🔥 PROBAR REGISTRO AUTOMÁTICO
+    </button>
+</form>
+
+<h3>Probar Login Directo</h3>
+<form method="post" asp-page-handler="TestLogin">
+    <button type="submit" style="background: blue; color: white; padding: 10px;">
+        🔐 PROBAR LOGIN AUTOMÁTICO
+    </button>
+</form>
+
+@if (TempData["message"] != null)
+{
+    <div style="background: yellow; padding: 15px; margin: 10px 0; border: 2px solid orange;">
+        <strong>RESULTADO:</strong> @TempData["message"]
+    </div>
+}

@@ -1,0 +1,75 @@
+﻿@page
+@using Microsoft.AspNetCore.Identity
+@using Microsoft.EntityFrameworkCore
+@using EcommerceFixed.Models
+@using EcommerceFixed.Data
+@inject UserManager<ApplicationUser> UserManager
+@inject ApplicationDbContext Context
+
+@{
+    ViewData["Title"] = "Test Database";
+
+    string message = "";
+    bool dbConnected = false;
+    bool userCreated = false;
+
+    if (Request.Method == "POST")
+    {
+        try
+        {
+            // 1. Test database connection
+            dbConnected = await Context.Database.CanConnectAsync();
+            message += dbConnected ? "✅ Base de datos CONECTADA\n" : "❌ Base de datos NO CONECTADA\n";
+
+            if (dbConnected)
+            {
+                // 2. Try to create test user
+                var testUser = new ApplicationUser
+                {
+                    UserName = "test@test.com",
+                    Email = "test@test.com",
+                    FirstName = "Test",
+                    LastName = "User",
+                    EmailConfirmed = true,
+                    IsActive = true
+                };
+                testUser.UpdateFullName();
+
+                var result = await UserManager.CreateAsync(testUser, "123");
+
+                if (result.Succeeded)
+                {
+                    userCreated = true;
+                    message += "✅ USUARIO CREADO: test@test.com / 123\n";
+                }
+                else
+                {
+                    message += "❌ ERROR creando usuario:\n";
+                    foreach (var error in result.Errors)
+                    {
+                        message += $"   - {error.Description}\n";
+                    }
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            message += $"💥 EXCEPCIÓN: {ex.Message}\n";
+        }
+    }
+}
+
+<h2>Diagnóstico de Base de Datos</h2>
+
+<pre style="background: #f8f9fa; padding: 20px; border-radius: 10px; white-space: pre-wrap;">@message</pre>
+
+<form method="post">
+    <button type="submit" class="btn btn-primary">Ejecutar Diagnóstico</button>
+</form>
+
+@if (userCreated)
+{
+    <div class="mt-3">
+        <a href="/Account/Login" class="btn btn-success">Probar Login con test@test.com / 123</a>
+    </div>
+}

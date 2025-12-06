@@ -1,0 +1,402 @@
+﻿@page
+@model EcommerceFixed.Pages.admin.products.EditModel
+
+@{
+    ViewData["Title"] = "Editar Producto | Admin";
+}
+
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    /* Contenedor Principal */
+    .edit-container {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    /* Tarjetas Premium */
+    .card-premium {
+        border: none;
+        border-radius: 16px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+        background: white;
+    }
+
+    .card-header-premium {
+        background: white;
+        border-bottom: 1px solid #f0f0f0;
+        padding: 1.5rem;
+    }
+
+    /* Estilos de Inputs */
+    .form-label {
+        font-weight: 600;
+        color: #6c757d;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        margin-bottom: 0.5rem;
+    }
+
+    .form-control, .form-select {
+        border-radius: 12px;
+        border: 1px solid #e0e0e0;
+        padding: 0.8rem 1rem;
+        font-size: 0.95rem;
+        font-weight: 500;
+        transition: all 0.2s;
+    }
+
+        .form-control:focus, .form-select:focus {
+            border-color: #0d6efd;
+            box-shadow: 0 0 0 4px rgba(13, 110, 253, 0.1);
+        }
+
+    /* Upload Area */
+    .file-upload-modern {
+        border: 2px dashed #ced4da;
+        border-radius: 12px;
+        padding: 2rem;
+        text-align: center;
+        cursor: pointer;
+        transition: 0.3s;
+        background: #fff;
+    }
+
+        .file-upload-modern:hover {
+            border-color: #0d6efd;
+            background: #f0f8ff;
+        }
+
+    .product-thumb-large {
+        width: 140px;
+        height: 140px;
+        object-fit: cover;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        background: white;
+    }
+
+    /* Range Slider */
+    .form-range::-webkit-slider-thumb {
+        background: #0d6efd;
+    }
+</style>
+
+@if (TempData["success"] != null)
+{
+    <div class="position-fixed top-0 end-0 p-3" style="z-index: 1050; margin-top: 80px;"><div class="toast show bg-success text-white border-0 shadow-lg"><div class="d-flex"><div class="toast-body"><i class="fas fa-check-circle me-2"></i>@TempData["success"]</div><button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button></div></div></div>
+}
+@if (TempData["error"] != null)
+{
+    <div class="position-fixed top-0 end-0 p-3" style="z-index: 1050; margin-top: 80px;"><div class="toast show bg-danger text-white border-0 shadow-lg"><div class="d-flex"><div class="toast-body"><i class="fas fa-exclamation-triangle me-2"></i>@TempData["error"]</div><button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button></div></div></div>
+}
+
+<div class="container-fluid px-4 py-5 edit-container">
+
+    <div class="d-flex justify-content-between align-items-center mb-5">
+        <div class="d-flex align-items-center gap-3">
+            <a asp-page="./Index" class="btn btn-white border shadow-sm rounded-circle p-2" style="width: 45px; height: 45px; display: flex; align-items: center; justify-content: center;">
+                <i class="fas fa-arrow-left text-muted"></i>
+            </a>
+            <div>
+                <h6 class="text-uppercase text-muted small fw-bold mb-1">Edición de Producto</h6>
+                <h2 class="fw-bold text-dark mb-0">@Model.Product.Name</h2>
+            </div>
+        </div>
+        <div class="d-flex gap-2">
+            <a asp-page="/products/Details" asp-route-id="@Model.Product.Id" target="_blank" class="btn btn-outline-dark rounded-pill px-4">
+                <i class="fas fa-external-link-alt me-2"></i>Ver en Tienda
+            </a>
+        </div>
+    </div>
+
+    <form method="post" enctype="multipart/form-data" class="needs-validation" novalidate>
+        <input type="hidden" asp-for="Product.Id" />
+
+        <div class="row g-4">
+
+            <div class="col-lg-8">
+                <div class="card card-premium mb-4">
+                    <div class="card-header-premium">
+                        <h5 class="mb-0 fw-bold"><i class="fas fa-edit text-primary me-2"></i>Datos Generales</h5>
+                    </div>
+                    <div class="card-body p-4">
+                        <div class="row g-4">
+                            <div class="col-md-8">
+                                <label asp-for="Product.Name" class="form-label">Nombre del Producto</label>
+                                <input asp-for="Product.Name" class="form-control form-control-lg fw-bold" placeholder="Nombre..." required>
+                                <div class="invalid-feedback">El nombre es obligatorio.</div>
+                            </div>
+                            <div class="col-md-4">
+                                <label asp-for="Product.CategoryId" class="form-label">Categoría</label>
+                                <select asp-for="Product.CategoryId" asp-items="@(new SelectList(Model.Categories, "Id", "Name"))" class="form-select form-select-lg" required>
+                                    <option value="">Seleccionar...</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label asp-for="Product.Desc" class="form-label">Descripción</label>
+                                <textarea asp-for="Product.Desc" class="form-control" rows="4" placeholder="Detalles del producto..." required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <label asp-for="Product.AvailableSizes" class="form-label">Tallas Disponibles</label>
+                                <input asp-for="Product.AvailableSizes" class="form-control" placeholder="Ej: S, M, L, XL ó 38, 39, 40">
+                                <small class="text-muted">Separa las tallas con comas.</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card-premium mb-4">
+                    <div class="card-header-premium bg-light">
+                        <h5 class="mb-0 fw-bold"><i class="fas fa-coins text-warning me-2"></i>Inventario y Precios</h5>
+                    </div>
+                    <div class="card-body p-4">
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <label asp-for="Product.Price" class="form-label">Precio ($)</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-white"><i class="fas fa-dollar-sign text-muted"></i></span>
+                                    <input asp-for="Product.Price" type="number" step="0.01" class="form-control form-control-lg fw-bold" placeholder="0.00" required>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label asp-for="Product.Discount" class="form-label">Descuento (%)</label>
+                                <input asp-for="Product.Discount" type="number" class="form-control form-control-lg" placeholder="0">
+                            </div>
+                            <div class="col-md-4">
+                                <label asp-for="Product.Quantity" class="form-label">Stock Disponible</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-white"><i class="fas fa-box text-muted"></i></span>
+                                    <input asp-for="Product.Quantity" type="number" class="form-control form-control-lg" placeholder="0" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label asp-for="Product.SKU" class="form-label">SKU (Código)</label>
+                                <input asp-for="Product.SKU" class="form-control text-uppercase">
+                            </div>
+                            <div class="col-md-6">
+                                <label asp-for="Product.Gender" class="form-label">Género</label>
+                                <select asp-for="Product.Gender" class="form-select" required>
+                                    <option value="Unisex">⚧ Unisex</option>
+                                    <option value="Hombre">👨 Hombre</option>
+                                    <option value="Mujer">👩 Mujer</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card-premium mb-4 border-start border-4 border-primary">
+                    <div class="card-header-premium bg-white">
+                        <div class="d-flex align-items-center">
+                            <div class="bg-primary bg-opacity-10 p-2 rounded-circle me-3"><i class="fas fa-robot text-primary fs-5"></i></div>
+                            <div>
+                                <h5 class="mb-0 fw-bold">Configuración de Inteligencia Artificial</h5>
+                                <small class="text-muted">Datos para el Chatbot Stylist.</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body p-4">
+                        <div class="row g-3">
+                            <div class="col-md-4">
+                                <label asp-for="Product.ClothingType" class="form-label">Tipo de Prenda</label>
+                                <select asp-for="Product.ClothingType" class="form-select">
+                                    <option value="Camiseta">Camiseta</option>
+                                    <option value="Pantalón">Pantalón</option>
+                                    <option value="Zapatos">Zapatos</option>
+                                    <option value="Vestido">Vestido</option>
+                                    <option value="Chaqueta">Chaqueta</option>
+                                    <option value="Accesorio">Accesorio</option>
+                                    <option value="Falda">Falda</option>
+                                    <option value="Suéter">Suéter</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <label asp-for="Product.Style" class="form-label">Estilo</label>
+                                <select asp-for="Product.Style" class="form-select">
+                                    <option value="Casual">Casual</option>
+                                    <option value="Formal">Formal</option>
+                                    <option value="Urbano">Urbano</option>
+                                    <option value="Gótico">Gótico</option>
+                                    <option value="Vintage">Vintage</option>
+                                    <option value="Bohemio">Bohemio</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <label asp-for="Product.Occasion" class="form-label">Ocasión</label>
+                                <select asp-for="Product.Occasion" class="form-select">
+                                    <option value="Diario">Diario</option>
+                                    <option value="Fiesta">Fiesta</option>
+                                    <option value="Trabajo">Trabajo</option>
+                                    <option value="Deporte">Deporte</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <label asp-for="Product.Season" class="form-label">Temporada</label>
+                                <select asp-for="Product.Season" class="form-select">
+                                    <option value="Todo el año">Todo el año</option>
+                                    <option value="Verano">Verano</option>
+                                    <option value="Invierno">Invierno</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <label asp-for="Product.Color" class="form-label">Color</label>
+                                <select asp-for="Product.Color" class="form-select">
+                                    <option value="Negro">Negro</option>
+                                    <option value="Blanco">Blanco</option>
+                                    <option value="Azul">Azul</option>
+                                    <option value="Rojo">Rojo</option>
+                                    <option value="Verde">Verde</option>
+                                    <option value="Beige">Beige</option>
+                                    <option value="Gris">Gris</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <label asp-for="Product.Material" class="form-label">Material</label>
+                                <input asp-for="Product.Material" class="form-control">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label asp-for="Product.MinTemperature" class="form-label">Temp. Mínima (°C)</label>
+                                <input asp-for="Product.MinTemperature" type="number" class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <label asp-for="Product.MaxTemperature" class="form-label">Temp. Máxima (°C)</label>
+                                <input asp-for="Product.MaxTemperature" type="number" class="form-control">
+                            </div>
+
+                            <div class="col-12">
+                                <label asp-for="Product.Tags" class="form-label">Etiquetas (Tags)</label>
+                                <input asp-for="Product.Tags" class="form-control" placeholder="Separadas por comas...">
+                            </div>
+                            <div class="col-12">
+                                <label asp-for="Product.CompatibleWith" class="form-label">Combina bien con</label>
+                                <input asp-for="Product.CompatibleWith" class="form-control" placeholder="Sugerencias para el bot...">
+                            </div>
+
+                            <div class="col-12 mt-3">
+                                <label class="form-label">Nivel de Formalidad: <span id="formalityVal" class="text-primary fw-bold">@Model.Product.FormalityLevel</span>/5</label>
+                                <input asp-for="Product.FormalityLevel" type="range" class="form-range" min="1" max="5" id="formalityRange" oninput="document.getElementById('formalityVal').innerText = this.value">
+                                <div class="d-flex justify-content-between small text-muted fw-bold">
+                                    <span>Muy Casual</span><span>Muy Formal</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+
+                <div class="card card-premium mb-4">
+                    <div class="card-header-premium">
+                        <h5 class="mb-0 fw-bold small text-uppercase">Imagen Principal</h5>
+                    </div>
+                    <div class="card-body p-4 text-center">
+                        <div class="mb-3">
+                            <img src="@Model.Product.ImageLocation" class="product-thumb-large mb-3" alt="Producto Actual">
+                        </div>
+                        <div class="file-upload-modern" onclick="document.getElementById('ImageFile').click()">
+                            <input type="file" id="ImageFile" name="ImageFile" class="d-none" accept="image/*" onchange="previewFile()">
+                            <i class="fas fa-cloud-upload-alt fa-2x text-primary mb-2"></i>
+                            <p class="mb-0 small fw-bold">Cambiar Imagen</p>
+                        </div>
+                        <div id="newPreviewArea" class="mt-3 d-none animate__animated animate__fadeIn">
+                            <p class="text-success small fw-bold mb-1"><i class="fas fa-arrow-down"></i> Nueva Selección</p>
+                            <img id="newPreviewImg" src="" class="product-thumb-large border border-success border-2">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card-premium mb-4">
+                    <div class="card-header-premium">
+                        <h5 class="mb-0 fw-bold small text-uppercase">Galería Adicional</h5>
+                    </div>
+                    <div class="card-body p-4">
+                        @if (Model.Product.Images != null && Model.Product.Images.Any())
+                        {
+                            <div class="d-flex flex-wrap gap-2 mb-3">
+                                @foreach (var img in Model.Product.Images)
+                                {
+                                    <img src="@img.ImageUrl" style="width: 60px; height: 60px; object-fit: cover; border-radius: 8px; border: 1px solid #eee;">
+                                }
+                            </div>
+                        }
+                        <div class="file-upload-modern" style="border-style: dotted;" onclick="document.getElementById('ExtraImages').click()">
+                            <input type="file" id="ExtraImages" name="ExtraImages" class="d-none" accept="image/*" multiple onchange="updateGalleryCount(this)">
+                            <i class="fas fa-images fa-2x text-muted mb-2"></i>
+                            <p class="small mb-0 text-muted">Añadir más fotos</p>
+                        </div>
+                        <p id="galleryCount" class="small text-success fw-bold mt-3 d-none"></p>
+                    </div>
+                </div>
+
+                <div class="card card-premium mb-4">
+                    <div class="card-body p-4">
+                        <div class="form-check form-switch mb-3">
+                            <input asp-for="Product.IsFeatured" class="form-check-input" type="checkbox" style="width: 3em; height: 1.5em;">
+                            <label class="form-check-label ms-2 fw-bold mt-1">Destacar ⭐</label>
+                        </div>
+                        <hr>
+                        <button type="submit" class="btn btn-success btn-lg w-100 fw-bold shadow-sm mb-2">
+                            <i class="fas fa-save me-2"></i>Guardar Cambios
+                        </button>
+                        <a asp-page="./Index" class="btn btn-light w-100 text-muted fw-bold">Cancelar</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        // Preview de Imagen Simple
+        function previewFile() {
+            const preview = document.getElementById('newPreviewImg');
+            const file = document.getElementById('ImageFile').files[0];
+            const area = document.getElementById('newPreviewArea');
+
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    preview.src = e.target.result;
+                    area.classList.remove('d-none');
+                }
+                reader.readAsDataURL(file);
+            }
+        }
+
+        // Contador Galería
+        function updateGalleryCount(input) {
+            const count = input.files.length;
+            const label = document.getElementById('galleryCount');
+            if (count > 0) {
+                label.textContent = count + ' nuevas imágenes seleccionadas';
+                label.classList.remove('d-none');
+            } else {
+                label.classList.add('d-none');
+            }
+        }
+
+        // Validación Bootstrap
+        (function () {
+            'use strict'
+            var forms = document.querySelectorAll('.needs-validation')
+            Array.prototype.slice.call(forms).forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
+}

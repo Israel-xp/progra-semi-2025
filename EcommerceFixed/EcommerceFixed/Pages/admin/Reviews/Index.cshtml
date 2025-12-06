@@ -1,0 +1,403 @@
+﻿@page
+@model EcommerceFixed.Pages.Admin.Reviews.IndexModel
+@{
+    ViewData["Title"] = "Gestión de Reseñas";
+    ViewData["ActivePage"] = "admin-reviews";
+}
+
+<div class="container-fluid">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="h2">@ViewData["Title"]</h1>
+        <div>
+            <a href="/Admin" class="btn btn-outline-secondary">
+                <i class="fas fa-arrow-left me-2"></i>Volver al Panel
+            </a>
+        </div>
+    </div>
+
+    <!-- Alertas -->
+    @if (TempData["success"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show mb-4" role="alert">
+            <strong>¡Éxito!</strong> @TempData["success"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    @if (TempData["error"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show mb-4" role="alert">
+            <strong>Error:</strong> @TempData["error"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    <!-- Filtros y Búsqueda -->
+    <div class="card mb-4">
+        <div class="card-body">
+            <form method="get" class="row g-3">
+                <div class="col-md-4">
+                    <div class="input-group">
+                        <input type="text" asp-for="SearchTerm" class="form-control"
+                               placeholder="Buscar en comentarios, usuarios o productos...">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-search"></i>
+                        </button>
+                        @if (!string.IsNullOrEmpty(Model.SearchTerm))
+                        {
+                            <a href="@Url.Page("./Index")" class="btn btn-outline-secondary">
+                                <i class="fas fa-times"></i>
+                            </a>
+                        }
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <select asp-for="SortOrder" class="form-select" onchange="this.form.submit()">
+                        <option value="newest">Más recientes</option>
+                        <option value="oldest">Más antiguas</option>
+                        <option value="rating_high">Mejor rating</option>
+                        <option value="rating_low">Peor rating</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <select asp-for="FilterBy" class="form-select" onchange="this.form.submit()">
+                        <option value="all">Todas las reseñas</option>
+                        <option value="with_images">Con imágenes</option>
+                        <option value="high_rating">Rating alto (4-5)</option>
+                        <option value="low_rating">Rating bajo (1-2)</option>
+                    </select>
+                </div>
+                <div class="col-md-2 text-end">
+                    <span class="badge bg-primary fs-6">
+                        @Model.Reviews.Count encontradas
+                    </span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Lista de Reseñas -->
+    <div class="card">
+        <div class="card-header bg-light">
+            <div class="d-flex justify-content-between align-items-center">
+                <h5 class="card-title mb-0">Todas las Reseñas</h5>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="selectAll">
+                    <label class="form-check-label small" for="selectAll">Seleccionar todos</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-body p-0">
+            @if (Model.Reviews.Any())
+            {
+                <form method="post" id="reviewsForm">
+                    <div class="table-responsive">
+                        <table class="table table-hover mb-0">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th width="40" class="ps-3">
+                                        <input type="checkbox" id="selectAllCheckbox" class="form-check-input">
+                                    </th>
+                                    <th>Producto</th>
+                                    <th>Usuario</th>
+                                    <th>Rating</th>
+                                    <th>Comentario</th>
+                                    <th>Fecha</th>
+                                    <th width="120" class="text-center">Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var review in Model.Reviews)
+                                {
+                                    <tr>
+                                        <td class="ps-3">
+                                            <input type="checkbox" name="selectedReviews"
+                                                   value="@review.Id" class="form-check-input review-checkbox">
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <img src="@review.Product.ImageLocation"
+                                                     class="rounded me-2"
+                                                     style="width: 40px; height: 40px; object-fit: cover;"
+                                                     alt="@review.Product.Name">
+                                                <div>
+                                                    <a href="/products/Details?id=@review.ProductId"
+                                                       target="_blank" class="text-decoration-none fw-semibold">
+                                                        @review.Product.Name
+                                                    </a>
+                                                    <br>
+                                                    <small class="text-muted">@review.Product.Category.Name</small>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <div class="avatar-sm bg-primary rounded me-2 d-flex align-items-center justify-content-center">
+                                                    <span class="text-white fw-bold small">
+                                                        @review.UserDisplayName?[0]
+                                                    </span>
+                                                </div>
+                                                <div>
+                                                    <div class="fw-semibold small">@review.UserDisplayName</div>
+                                                    <small class="text-muted">@review.User.Email</small>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <div class="rating-stars me-2">
+                                                    @for (int i = 1; i <= 5; i++)
+                                                    {
+                                                        <span class="@(i <= review.Rating ? "text-warning" : "text-muted")">★</span>
+                                                    }
+                                                </div>
+                                                <span class="badge @GetRatingBadgeClass(review.Rating)">
+                                                    @review.Rating/5
+                                                </span>
+                                            </div>
+                                        </td>
+                                        <td style="max-width: 300px;">
+                                            <div class="comment-content">
+                                                @if (!string.IsNullOrEmpty(review.Comment))
+                                                {
+                                                    <div class="comment-text">
+                                                        @if (review.Comment.Length > 150)
+                                                        {
+                                                            <span class="comment-preview">@review.Comment.Substring(0, 150)...</span>
+                                                            <span class="comment-full d-none">@review.Comment</span>
+                                                            <button type="button" class="btn btn-sm btn-link p-0 ms-1 toggle-comment">
+                                                                <small class="text-primary">Ver más</small>
+                                                            </button>
+                                                        }
+                                                        else
+                                                        {
+                                                            @review.Comment
+                                                        }
+                                                    </div>
+                                                }
+                                                else
+                                                {
+                                                    <span class="text-muted fst-italic">Sin comentario</span>
+                                                }
+
+                                                @if (!string.IsNullOrEmpty(review.ReviewImage))
+                                                {
+                                                    <div class="mt-1">
+                                                        <a href="@review.ReviewImage"
+                                                           target="_blank"
+                                                           class="btn btn-sm btn-outline-primary btn-sm">
+                                                            <i class="fas fa-image me-1"></i>Imagen
+                                                        </a>
+                                                    </div>
+                                                }
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="text-nowrap">
+                                                <div class="small fw-semibold">@review.DateCreated.ToString("dd/MM/yyyy")</div>
+                                                <small class="text-muted">@review.DateCreated.ToString("HH:mm")</small>
+                                            </div>
+                                        </td>
+                                        <td class="text-center">
+                                            <div class="btn-group btn-group-sm">
+                                                <button type="button"
+                                                        class="btn btn-outline-danger"
+                                                        data-bs-toggle="tooltip"
+                                                        title="Eliminar reseña"
+                                                        onclick="confirmDelete(@review.Id, '@review.Product.Name')">
+                                                    <i class="fas fa-trash"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Bulk Actions -->
+                    <div class="card-footer bg-light">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center">
+                                <span class="me-3" id="selectedCount">0</span> seleccionado(s)
+                            </div>
+                            <div>
+                                <button type="submit"
+                                        asp-page-handler="DeleteMultipleReviews"
+                                        class="btn btn-danger btn-sm"
+                                        id="deleteSelectedBtn"
+                                        disabled
+                                        onclick="return confirm('¿Estás seguro de que quieres eliminar las reseñas seleccionadas?')">
+                                    <i class="fas fa-trash me-1"></i>Eliminar Seleccionados
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            }
+            else
+            {
+                <div class="text-center py-5">
+                    <i class="fas fa-comments fa-3x text-muted mb-3"></i>
+                    <h4 class="text-muted">No hay reseñas</h4>
+                    <p class="text-muted">No se encontraron reseñas con los criterios actuales.</p>
+                    @if (!string.IsNullOrEmpty(Model.SearchTerm) || Model.FilterBy != "all")
+                    {
+                        <a href="@Url.Page("./Index")" class="btn btn-primary">
+                            <i class="fas fa-refresh me-1"></i>Ver todas las reseñas
+                        </a>
+                    }
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+@section Styles {
+    <style>
+        .avatar-sm {
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+        }
+
+        .rating-stars {
+            font-size: 0.9rem;
+        }
+
+        .comment-content {
+            word-wrap: break-word;
+        }
+
+        .comment-text {
+            line-height: 1.4;
+        }
+
+        .table td {
+            vertical-align: middle;
+        }
+
+        .badge-rating-high {
+            background-color: #198754;
+        }
+
+        .badge-rating-medium {
+            background-color: #ffc107;
+            color: #000;
+        }
+
+        .badge-rating-low {
+            background-color: #dc3545;
+        }
+
+        .card-footer {
+            border-top: 1px solid #dee2e6;
+        }
+
+        .table-hover tbody tr:hover {
+            background-color: rgba(0, 0, 0, 0.025);
+        }
+    </style>
+}
+
+@section Scripts {
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Inicializar tooltips
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl);
+            });
+
+            // Preservar selecciones del dropdown
+            const urlParams = new URLSearchParams(window.location.search);
+            document.querySelector('select[name="SortOrder"]').value = urlParams.get('SortOrder') || 'newest';
+            document.querySelector('select[name="FilterBy"]').value = urlParams.get('FilterBy') || 'all';
+            document.querySelector('input[name="SearchTerm"]').value = urlParams.get('SearchTerm') || '';
+
+            // Seleccionar/Deseleccionar todos
+            document.getElementById('selectAllCheckbox').addEventListener('change', function() {
+                const checkboxes = document.querySelectorAll('.review-checkbox');
+                checkboxes.forEach(checkbox => {
+                    checkbox.checked = this.checked;
+                });
+                updateSelectedCount();
+            });
+
+            // Actualizar contador de seleccionados
+            function updateSelectedCount() {
+                const selected = document.querySelectorAll('.review-checkbox:checked');
+                const count = selected.length;
+                document.getElementById('selectedCount').textContent = count;
+                document.getElementById('deleteSelectedBtn').disabled = count === 0;
+
+                // Actualizar checkbox "selectAll"
+                const totalCheckboxes = document.querySelectorAll('.review-checkbox').length;
+                document.getElementById('selectAllCheckbox').checked = count > 0 && count === totalCheckboxes;
+                document.getElementById('selectAllCheckbox').indeterminate = count > 0 && count < totalCheckboxes;
+            }
+
+            // Event listeners para checkboxes individuales
+            document.querySelectorAll('.review-checkbox').forEach(checkbox => {
+                checkbox.addEventListener('change', updateSelectedCount);
+            });
+
+            // Toggle comentarios largos
+            document.querySelectorAll('.toggle-comment').forEach(button => {
+                button.addEventListener('click', function() {
+                    const container = this.closest('.comment-text');
+                    const preview = container.querySelector('.comment-preview');
+                    const full = container.querySelector('.comment-full');
+
+                    if (preview.classList.contains('d-none')) {
+                        preview.classList.remove('d-none');
+                        full.classList.add('d-none');
+                        this.innerHTML = '<small class="text-primary">Ver más</small>';
+                    } else {
+                        preview.classList.add('d-none');
+                        full.classList.remove('d-none');
+                        this.innerHTML = '<small class="text-primary">Ver menos</small>';
+                    }
+                });
+            });
+
+            // Inicializar contador
+            updateSelectedCount();
+        });
+
+        // Confirmar eliminación individual
+        function confirmDelete(reviewId, productName) {
+            if (confirm(`¿Estás seguro de que quieres eliminar la reseña del producto "${productName}"?\n\nEsta acción no se puede deshacer.`)) {
+                const form = document.createElement('form');
+                form.method = 'post';
+                form.action = '?handler=DeleteReview';
+
+                const input = document.createElement('input');
+                input.type = 'hidden';
+                input.name = 'reviewId';
+                input.value = reviewId;
+
+                form.appendChild(input);
+                document.body.appendChild(form);
+                form.submit();
+            }
+        }
+    </script>
+}
+
+@functions {
+    // Función para obtener la clase del badge según el rating
+    public string GetRatingBadgeClass(int rating)
+    {
+        return rating switch
+        {
+            >= 4 => "badge-rating-high",
+            3 => "badge-rating-medium",
+            _ => "badge-rating-low"
+        };
+    }
+}

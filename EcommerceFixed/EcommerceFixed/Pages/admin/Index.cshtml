@@ -1,0 +1,233 @@
+﻿@page
+@model EcommerceFixed.Pages.admin.IndexModel
+@{
+    ViewData["Title"] = "Dashboard | Admin";
+}
+
+<style>
+    body {
+        background-color: #f3f4f6;
+    }
+
+    .dashboard-header {
+        background: linear-gradient(135deg, #1e1e2f 0%, #2d2d44 100%);
+        color: white;
+        padding-bottom: 4rem;
+        border-radius: 0 0 20px 20px;
+        margin-bottom: -3rem;
+    }
+
+    /* Cards de Estadísticas Pequeñas */
+    .stat-card {
+        background: white;
+        border-radius: 16px;
+        border: none;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        transition: transform 0.3s ease;
+        height: 100%;
+    }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+
+    .icon-box {
+        width: 55px;
+        height: 55px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        color: white;
+    }
+
+    /* Cards Grandes de Gestión */
+    .manage-card {
+        background: white;
+        border-radius: 16px;
+        border: none;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+        transition: all 0.3s ease;
+        height: 100%;
+        text-decoration: none;
+        color: inherit;
+        display: block;
+        overflow: hidden;
+        position: relative;
+    }
+
+        .manage-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            color: inherit;
+        }
+
+    .manage-card-body {
+        padding: 2rem;
+    }
+
+    .manage-icon-large {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        color: white;
+    }
+
+    /* Colores Específicos */
+    .card-product .manage-icon-large {
+        background: linear-gradient(135deg, #0d6efd, #0a58ca);
+    }
+
+    .card-category .manage-icon-large {
+        background: linear-gradient(135deg, #198754, #146c43);
+    }
+
+    .card-review .manage-icon-large {
+        background: linear-gradient(135deg, #ffc107, #ffca2c);
+        color: #000;
+    }
+
+    .card-link-icon {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        font-size: 1.5rem;
+        opacity: 0.2;
+        transition: 0.3s;
+    }
+
+    .manage-card:hover .card-link-icon {
+        opacity: 1;
+        transform: translateX(5px);
+    }
+
+</style>
+
+<div class="dashboard-header pt-5 px-4">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <div>
+                <h6 class="text-uppercase text-white-50 mb-1 fw-bold ls-1">Panel de Control</h6>
+                <h2 class="fw-bold mb-0">Bienvenido, Admin 👋</h2>
+            </div>
+            <a href="/" class="btn btn-outline-light rounded-pill px-4">
+                <i class="bi bi-shop me-2"></i>Ir a la Tienda
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="container pb-5">
+
+    <div class="row g-4 mb-5">
+        <div class="col-md-3">
+            <div class="stat-card p-3">
+                <div class="d-flex align-items-center">
+                    <div class="icon-box bg-primary bg-gradient shadow-sm">
+                        <i class="bi bi-box-seam"></i>
+                    </div>
+                    <div class="ms-3">
+                        <p class="text-muted small mb-0 fw-bold text-uppercase">Productos</p>
+                        <h3 class="fw-bold mb-0 text-dark">@Model.ProductsCount</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="stat-card p-3">
+                <div class="d-flex align-items-center">
+                    <div class="icon-box bg-success bg-gradient shadow-sm">
+                        <i class="bi bi-tags"></i>
+                    </div>
+                    <div class="ms-3">
+                        <p class="text-muted small mb-0 fw-bold text-uppercase">Categorías</p>
+                        <h3 class="fw-bold mb-0 text-dark">@Model.CategoriesCount</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="stat-card p-3">
+                <div class="d-flex align-items-center">
+                    <div class="icon-box bg-warning bg-gradient shadow-sm text-dark">
+                        <i class="bi bi-chat-quote"></i>
+                    </div>
+                    <div class="ms-3">
+                        <p class="text-muted small mb-0 fw-bold text-uppercase">Reseñas</p>
+                        <h3 class="fw-bold mb-0 text-dark">@Model.ReviewsCount</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="stat-card p-3">
+                <div class="d-flex align-items-center">
+                    <div class="icon-box bg-info bg-gradient shadow-sm text-white">
+                        <i class="bi bi-people"></i>
+                    </div>
+                    <div class="ms-3">
+                        <p class="text-muted small mb-0 fw-bold text-uppercase">Usuarios</p>
+                        <h3 class="fw-bold mb-0 text-dark">@Model.UsersCount</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h5 class="fw-bold text-dark mb-4 ps-1 border-start border-4 border-warning ps-3">Gestión de la Tienda</h5>
+
+    <div class="row g-4">
+
+        <div class="col-md-4">
+            <a href="admin/products/Index" class="manage-card card-product">
+                <div class="manage-card-body">
+                    <div class="manage-icon-large shadow-sm">
+                        <i class="bi bi-box-seam"></i>
+                    </div>
+                    <h4 class="fw-bold">Productos</h4>
+                    <p class="text-muted small mb-0">
+                        Administra el inventario, precios, stock y características de tus artículos.
+                    </p>
+                    <i class="bi bi-arrow-right card-link-icon text-primary"></i>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-md-4">
+            <a href="admin/categories/Index" class="manage-card card-category">
+                <div class="manage-card-body">
+                    <div class="manage-icon-large shadow-sm">
+                        <i class="bi bi-tags"></i>
+                    </div>
+                    <h4 class="fw-bold">Categorías</h4>
+                    <p class="text-muted small mb-0">
+                        Organiza tu tienda. Crea, edita y elimina las categorías de ropa.
+                    </p>
+                    <i class="bi bi-arrow-right card-link-icon text-success"></i>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-md-4">
+            <a href="admin/Reviews/Index" class="manage-card card-review">
+                <div class="manage-card-body">
+                    <div class="manage-icon-large shadow-sm">
+                        <i class="bi bi-chat-square-text"></i>
+                    </div>
+                    <h4 class="fw-bold">Moderación de Reseñas</h4>
+                    <p class="text-muted small mb-0">
+                        Lee los comentarios de los clientes, responde o elimina reseñas inadecuadas.
+                    </p>
+                    <i class="bi bi-arrow-right card-link-icon text-warning"></i>
+                </div>
+            </a>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,121 @@
+﻿/* Botón Flotante */
+.chat-toggle-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 65px;
+    height: 65px;
+    background: #1a1a1a; /* Dark */
+    color: #D4AF37; /* Dorado */
+    border: 2px solid #D4AF37;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    z-index: 2000;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+}
+
+    .chat-toggle-btn:hover {
+        transform: scale(1.1) rotate(10deg);
+    }
+
+/* Ventana del Chat */
+.chat-window {
+    position: fixed;
+    bottom: 110px;
+    right: 30px;
+    width: 360px;
+    height: 550px;
+    max-height: 80vh;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    z-index: 2000;
+    display: none; /* Oculto al inicio */
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+}
+
+/* Encabezado */
+.chat-header {
+    background: #1a1a1a;
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid #D4AF37;
+}
+
+/* Área de mensajes */
+.chat-body {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    background: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Burbujas */
+.message {
+    max-width: 85%;
+    padding: 10px 14px;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+    .message.bot {
+        align-self: flex-start;
+        background: white;
+        border: 1px solid #e0e0e0;
+        border-left: 4px solid #D4AF37;
+    }
+
+    .message.user {
+        align-self: flex-end;
+        background: #1a1a1a;
+        color: white;
+    }
+
+/* Tarjeta de Producto */
+.chat-product {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+    .chat-product:hover {
+        transform: translateY(-2px);
+        border-color: #D4AF37;
+    }
+
+    .chat-product img {
+        width: 100%;
+        height: 100px;
+        object-fit: cover;
+    }
+
+.chat-product-info {
+    padding: 8px;
+}
+
+/* Footer (Input) */
+.chat-footer {
+    padding: 10px;
+    background: white;
+    border-top: 1px solid #eee;
+    display: flex;
+    gap: 5px;
+}

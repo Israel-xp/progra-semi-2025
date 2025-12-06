@@ -1,0 +1,358 @@
+﻿@page
+@model EcommerceFixed.Pages.admin.products.CreateModel
+
+@{
+    ViewData["Title"] = "Nuevo Producto | Admin";
+}
+
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    /* Cards Premium */
+    .card-premium {
+        border: none;
+        border-radius: 16px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+        background: white;
+    }
+
+    .card-header-premium {
+        background: white;
+        border-bottom: 1px solid #f0f0f0;
+        padding: 1.5rem;
+    }
+
+    /* Inputs Modernos */
+    .form-label {
+        font-weight: 600;
+        color: #6c757d;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        margin-bottom: 0.5rem;
+    }
+
+    .form-control, .form-select {
+        border-radius: 12px;
+        border: 1px solid #e0e0e0;
+        padding: 0.8rem 1rem;
+        font-size: 0.95rem;
+        font-weight: 500;
+        transition: all 0.2s;
+    }
+
+        .form-control:focus, .form-select:focus {
+            border-color: #0d6efd;
+            box-shadow: 0 0 0 4px rgba(13, 110, 253, 0.1);
+        }
+
+    /* Upload Area */
+    .file-upload-modern {
+        border: 2px dashed #ced4da;
+        border-radius: 12px;
+        padding: 2rem;
+        text-align: center;
+        cursor: pointer;
+        transition: 0.3s;
+        background: #fff;
+    }
+
+        .file-upload-modern:hover {
+            border-color: #0d6efd;
+            background: #f0f8ff;
+        }
+
+    .preview-img-box {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 12px;
+        border: 1px solid #eee;
+    }
+
+    /* Range Slider */
+    .form-range::-webkit-slider-thumb {
+        background: #0d6efd;
+    }
+</style>
+
+<div class="container-fluid px-4 py-5">
+    <div class="d-flex align-items-center gap-3 mb-5">
+        <a asp-page="./Index" class="btn btn-white border shadow-sm rounded-circle p-2" style="width: 45px; height: 45px; display: flex; align-items: center; justify-content: center;">
+            <i class="fas fa-arrow-left text-muted"></i>
+        </a>
+        <div>
+            <h6 class="text-uppercase text-muted small fw-bold mb-1">Catálogo</h6>
+            <h2 class="fw-bold text-dark mb-0">Crear Nuevo Producto</h2>
+        </div>
+    </div>
+
+    <form method="post" enctype="multipart/form-data" class="needs-validation" novalidate>
+        <div class="row g-4">
+
+            <div class="col-lg-8">
+
+                <div class="card card-premium mb-4">
+                    <div class="card-header-premium">
+                        <h5 class="mb-0 fw-bold"><i class="fas fa-info-circle text-primary me-2"></i>Información Básica</h5>
+                    </div>
+                    <div class="card-body p-4">
+                        <div class="row g-4">
+                            <div class="col-md-8">
+                                <label asp-for="Product.Name" class="form-label">Nombre del Producto *</label>
+                                <input asp-for="Product.Name" class="form-control form-control-lg fw-bold" placeholder="Ej: Camiseta Oversize Negra" required>
+                                <div class="invalid-feedback">El nombre es obligatorio</div>
+                            </div>
+                            <div class="col-md-4">
+                                <label asp-for="Product.CategoryId" class="form-label">Categoría *</label>
+                                <select asp-for="Product.CategoryId" asp-items="@(new SelectList(Model.Categories, "Id", "Name"))" class="form-select form-select-lg" required>
+                                    <option value="">Seleccionar...</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label asp-for="Product.Desc" class="form-label">Descripción *</label>
+                                <textarea asp-for="Product.Desc" class="form-control" rows="4" placeholder="Describe el producto..." required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <label asp-for="Product.AvailableSizes" class="form-label">Tallas Disponibles (Opcional)</label>
+                                <input asp-for="Product.AvailableSizes" class="form-control" placeholder="Ej: S, M, L, XL ó 38, 39, 40">
+                                <small class="text-muted">Separa las tallas con comas. Si lo dejas vacío, se usarán las por defecto.</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card-premium mb-4">
+                    <div class="card-header-premium bg-light">
+                        <h5 class="mb-0 fw-bold"><i class="fas fa-tag text-warning me-2"></i>Precio e Inventario</h5>
+                    </div>
+                    <div class="card-body p-4">
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <label asp-for="Product.Price" class="form-label">Precio ($) *</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-white"><i class="fas fa-dollar-sign text-muted"></i></span>
+                                    <input asp-for="Product.Price" type="number" step="0.01" class="form-control fw-bold" placeholder="0.00" required>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label asp-for="Product.Discount" class="form-label">Descuento (%)</label>
+                                <input asp-for="Product.Discount" type="number" class="form-control" placeholder="0">
+                            </div>
+                            <div class="col-md-4">
+                                <label asp-for="Product.Quantity" class="form-label">Stock Inicial *</label>
+                                <input asp-for="Product.Quantity" type="number" class="form-control" placeholder="0" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label asp-for="Product.SKU" class="form-label">SKU (Código)</label>
+                                <input asp-for="Product.SKU" class="form-control text-uppercase" placeholder="Auto-generado si vacío">
+                            </div>
+                            <div class="col-md-6">
+                                <label asp-for="Product.Gender" class="form-label">Género *</label>
+                                <select asp-for="Product.Gender" class="form-select" required>
+                                    <option value="Unisex">⚧ Unisex</option>
+                                    <option value="Hombre">👨 Hombre</option>
+                                    <option value="Mujer">👩 Mujer</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card-premium mb-4 border-start border-4 border-primary">
+                    <div class="card-header-premium">
+                        <div class="d-flex align-items-center">
+                            <div class="bg-primary bg-opacity-10 p-2 rounded-circle me-2"><i class="fas fa-robot text-primary"></i></div>
+                            <h5 class="mb-0 fw-bold">Datos para la IA (Smart Search)</h5>
+                        </div>
+                    </div>
+                    <div class="card-body p-4">
+                        <div class="row g-3">
+                            <div class="col-md-4">
+                                <label asp-for="Product.ClothingType" class="form-label">Tipo de Prenda *</label>
+                                <select asp-for="Product.ClothingType" class="form-select" required>
+                                    <option value="Camiseta">Camiseta</option>
+                                    <option value="Pantalón">Pantalón</option>
+                                    <option value="Zapatos">Zapatos</option>
+                                    <option value="Vestido">Vestido</option>
+                                    <option value="Chaqueta">Chaqueta</option>
+                                    <option value="Accesorio">Accesorio</option>
+                                    <option value="Falda">Falda</option>
+                                    <option value="Suéter">Suéter</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <label asp-for="Product.Style" class="form-label">Estilo</label>
+                                <select asp-for="Product.Style" class="form-select">
+                                    <option value="Casual">Casual</option>
+                                    <option value="Urbano">Urbano</option>
+                                    <option value="Formal">Formal</option>
+                                    <option value="Gótico">Gótico</option>
+                                    <option value="Bohemio">Bohemio</option>
+                                    <option value="Vintage">Vintage</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <label asp-for="Product.Occasion" class="form-label">Ocasión</label>
+                                <select asp-for="Product.Occasion" class="form-select">
+                                    <option value="Diario">Diario</option>
+                                    <option value="Fiesta">Fiesta</option>
+                                    <option value="Trabajo">Trabajo</option>
+                                    <option value="Deporte">Deporte</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <label asp-for="Product.Season" class="form-label">Temporada</label>
+                                <select asp-for="Product.Season" class="form-select">
+                                    <option value="Todo el año">Todo el año</option>
+                                    <option value="Verano">Verano</option>
+                                    <option value="Invierno">Invierno</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <label asp-for="Product.Color" class="form-label">Color</label>
+                                <select asp-for="Product.Color" class="form-select">
+                                    <option value="Negro">Negro</option>
+                                    <option value="Blanco">Blanco</option>
+                                    <option value="Azul">Azul</option>
+                                    <option value="Rojo">Rojo</option>
+                                    <option value="Verde">Verde</option>
+                                    <option value="Beige">Beige</option>
+                                    <option value="Gris">Gris</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <label asp-for="Product.Material" class="form-label">Material</label>
+                                <input asp-for="Product.Material" class="form-control" placeholder="Ej: Algodón">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label asp-for="Product.MinTemperature" class="form-label">Temp. Mínima (°C)</label>
+                                <input asp-for="Product.MinTemperature" type="number" class="form-control" placeholder="Ej: 10">
+                            </div>
+                            <div class="col-md-6">
+                                <label asp-for="Product.MaxTemperature" class="form-label">Temp. Máxima (°C)</label>
+                                <input asp-for="Product.MaxTemperature" type="number" class="form-control" placeholder="Ej: 25">
+                            </div>
+
+                            <div class="col-12">
+                                <label asp-for="Product.Tags" class="form-label">Etiquetas (Tags)</label>
+                                <input asp-for="Product.Tags" class="form-control" placeholder="Ej: dark, verano, concierto, moda, aesthetic">
+                                <small class="text-muted">Palabras clave separadas por comas.</small>
+                            </div>
+                            <div class="col-12">
+                                <label asp-for="Product.CompatibleWith" class="form-label">Combina bien con</label>
+                                <input asp-for="Product.CompatibleWith" class="form-control" placeholder="Ej: Jeans claros, Zapatillas blancas, Chaqueta de cuero...">
+                                <small class="text-muted">Sugerencias de outfits para el bot.</small>
+                            </div>
+
+                            <div class="col-12 mt-3">
+                                <label class="form-label">Nivel de Formalidad (1-5): <span id="formalityVal" class="text-primary fw-bold">3</span></label>
+                                <input asp-for="Product.FormalityLevel" type="range" class="form-range" min="1" max="5" step="1" value="3" oninput="document.getElementById('formalityVal').innerText = this.value">
+                                <div class="d-flex justify-content-between small text-muted fw-bold">
+                                    <span>Muy Casual</span><span>Muy Formal</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-lg-4">
+
+                <div class="card card-premium mb-4">
+                    <div class="card-header-premium">
+                        <h5 class="mb-0 fw-bold small text-uppercase">Imagen Principal</h5>
+                    </div>
+                    <div class="card-body p-4 text-center">
+                        <div class="file-upload-modern" onclick="document.getElementById('ImageFile').click()">
+                            <input type="file" id="ImageFile" name="ImageFile" class="d-none" accept="image/*" onchange="previewFile('ImageFile', 'mainPreview')">
+                            <i class="fas fa-cloud-upload-alt fa-2x text-primary mb-2"></i>
+                            <p class="small mb-0 text-muted">Click para subir portada</p>
+                        </div>
+                        <img id="mainPreview" src="" class="preview-img-box mt-3 d-none">
+                    </div>
+                </div>
+
+                <div class="card card-premium mb-4">
+                    <div class="card-header-premium">
+                        <h5 class="mb-0 fw-bold small text-uppercase">Galería Adicional</h5>
+                    </div>
+                    <div class="card-body p-4 text-center">
+                        <div class="file-upload-modern" style="border-style: dotted;" onclick="document.getElementById('ExtraImages').click()">
+                            <input type="file" id="ExtraImages" name="ExtraImages" class="d-none" accept="image/*" multiple onchange="updateGalleryCount(this)">
+                            <i class="fas fa-images fa-2x text-muted mb-2"></i>
+                            <p class="small mb-0 text-muted">Subir múltiples fotos</p>
+                        </div>
+                        <p id="galleryCount" class="small text-success fw-bold mt-3 d-none"></p>
+                    </div>
+                </div>
+
+                <div class="card card-premium mb-4">
+                    <div class="card-body p-4">
+                        <div class="form-check form-switch mb-3">
+                            <input asp-for="Product.IsFeatured" class="form-check-input" type="checkbox" style="width: 3em; height: 1.5em;">
+                            <label class="form-check-label ms-2 mt-1 fw-bold">Destacar ⭐</label>
+                        </div>
+                        <hr>
+                        <button type="submit" class="btn btn-primary btn-lg w-100 shadow-sm fw-bold mb-2">
+                            <i class="fas fa-save me-2"></i>Crear Producto
+                        </button>
+                        <a asp-page="./Index" class="btn btn-light w-100 text-muted">Cancelar</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        // Preview Imagen Principal
+        function previewFile(inputId, imgId) {
+            const file = document.getElementById(inputId).files[0];
+            const preview = document.getElementById(imgId);
+
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    preview.src = e.target.result;
+                    preview.classList.remove('d-none');
+                }
+                reader.readAsDataURL(file);
+            }
+        }
+
+        // Contador Galería
+        function updateGalleryCount(input) {
+            const count = input.files.length;
+            const label = document.getElementById('galleryCount');
+            if (count > 0) {
+                label.textContent = count + ' imágenes seleccionadas';
+                label.classList.remove('d-none');
+            } else {
+                label.classList.add('d-none');
+            }
+        }
+
+        // Validación Bootstrap
+        (function () {
+            'use strict'
+            var forms = document.querySelectorAll('.needs-validation')
+            Array.prototype.slice.call(forms).forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
+}

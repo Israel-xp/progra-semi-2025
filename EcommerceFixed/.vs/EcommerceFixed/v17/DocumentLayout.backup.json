@@ -1,0 +1,1331 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\pages\\admin\\products\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\pages\\admin\\products\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\pages\\admin\\products\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\pages\\admin\\products\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\pages\\admin\\products\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\pages\\admin\\products\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\pages\\admin\\products\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\pages\\admin\\products\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\pages\\products\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\pages\\products\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\pages\\products\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\pages\\products\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\pages\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\pages\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Data\\Migrations\\20251204190541_ProductDetailsUpgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EcommerceFixed\\Data\\Migrations\\20251204190541_ProductDetailsUpgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\models\\productimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\models\\productimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\services\\iamodaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\services\\iamodaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\pages\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\pages\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\pages\\admin\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\pages\\admin\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\pages\\admin\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\pages\\admin\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\pages\\admin\\reviews\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\pages\\admin\\reviews\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\models\\productvote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\models\\productvote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\models\\productreview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\models\\productreview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\pages\\products\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\pages\\products\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\pages\\admin\\products\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\pages\\admin\\products\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\pages\\admin\\products\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\pages\\admin\\products\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\pages\\admin\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\pages\\admin\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\wwwroot\\css\\chat.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\wwwroot\\css\\chat.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\data\\migrations\\20251204024108_botschemaupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\data\\migrations\\20251204024108_botschemaupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\pages\\wishlist\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\pages\\wishlist\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\pages\\test.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\pages\\test.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\pages\\checkout\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\pages\\checkout\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\helpers\\wishlisthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\helpers\\wishlisthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\models\\userwishlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\models\\userwishlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\pages\\checkout\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\pages\\checkout\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\helpers\\carthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\helpers\\carthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\pages\\cart\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\pages\\cart\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\pages\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\pages\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\models\\usercart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\models\\usercart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\pages\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\pages\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\wwwroot\\css\\bootstrap.min.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\wwwroot\\css\\bootstrap.min.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\pages\\wishlist\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\pages\\wishlist\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\pages\\myorders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\pages\\myorders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\helpers\\usershelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\helpers\\usershelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\pages\\categories\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\pages\\categories\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\pages\\profile\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\pages\\profile\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\pages\\myorders\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\pages\\myorders\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\pages\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\pages\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\pages\\testdb.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\pages\\testdb.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\pages\\error.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\pages\\error.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\pages\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\pages\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\pages\\shared\\_toast.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\pages\\shared\\_toast.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\pages\\categories\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\pages\\categories\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\pages\\categories\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\pages\\categories\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\pages\\categories\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\pages\\categories\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\pages\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\pages\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\pages\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\pages\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\pages\\admin\\products\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\pages\\admin\\products\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\pages\\admin\\products\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\pages\\admin\\products\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\pages\\admin\\products\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\pages\\admin\\products\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\pages\\admin\\categories\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\pages\\admin\\categories\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\pages\\admin\\categories\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\pages\\admin\\categories\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\pages\\admin\\categories\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\pages\\admin\\categories\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\pages\\admin\\categories\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\pages\\admin\\categories\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\pages\\admin\\categories\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\pages\\admin\\categories\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\pages\\admin\\categories\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\pages\\admin\\categories\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\pages\\admin\\categories\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\pages\\admin\\categories\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\pages\\admin\\categories\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\pages\\admin\\categories\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\pages\\account\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\pages\\account\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\data\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\data\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|c:\\users\\mineducyt\\desktop\\videos\\proyecto\\ecommercefixed\\ecommercefixed\\ecommercefixed.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{93A3E7B7-F48D-48BE-8BEC-76CEF9823D6D}|EcommerceFixed\\EcommerceFixed.csproj|solutionrelative:ecommercefixed\\ecommercefixed.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Create.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\admin\\products\\Create.cshtml.cs",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Pages\\admin\\products\\Create.cshtml.cs",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\admin\\products\\Create.cshtml.cs",
+              "RelativeToolTip": "EcommerceFixed\\Pages\\admin\\products\\Create.cshtml.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAmwGIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T20:41:09.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\products\\Index.cshtml",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Pages\\products\\Index.cshtml",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\products\\Index.cshtml",
+              "RelativeToolTip": "EcommerceFixed\\Pages\\products\\Index.cshtml",
+              "ViewState": "AgIAACwBAAAAAAAAAAAuwEkBAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-23T22:48:59.241Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Details.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\products\\Details.cshtml.cs",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Pages\\products\\Details.cshtml.cs",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\products\\Details.cshtml.cs",
+              "RelativeToolTip": "EcommerceFixed\\Pages\\products\\Details.cshtml.cs",
+              "ViewState": "AgIAAM4AAAAAAAAAAAAAANAAAAByAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T09:39:18.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\products\\Details.cshtml",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Pages\\products\\Details.cshtml",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\products\\Details.cshtml",
+              "RelativeToolTip": "EcommerceFixed\\Pages\\products\\Details.cshtml",
+              "ViewState": "AgIAAAoCAAAAAAAAAAAAABICAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-23T22:48:38.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\admin\\products\\Edit.cshtml",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Pages\\admin\\products\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\admin\\products\\Edit.cshtml",
+              "RelativeToolTip": "EcommerceFixed\\Pages\\admin\\products\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJEBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-23T22:43:49.792Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "EcommerceFixed\\Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAI4CAAAAAAAAAAAAADwBAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-23T22:49:26.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\admin\\products\\Create.cshtml",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Pages\\admin\\products\\Create.cshtml",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\admin\\products\\Create.cshtml*",
+              "RelativeToolTip": "EcommerceFixed\\Pages\\admin\\products\\Create.cshtml*",
+              "ViewState": "AgIAAEgBAAAAAAAAAAAuwGUBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-23T22:41:20.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Edit.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\admin\\products\\Edit.cshtml.cs",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Pages\\admin\\products\\Edit.cshtml.cs",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\admin\\products\\Edit.cshtml.cs",
+              "RelativeToolTip": "EcommerceFixed\\Pages\\admin\\products\\Edit.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T21:00:27.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "20251204190541_ProductDetailsUpgrade.cs",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Data\\Migrations\\20251204190541_ProductDetailsUpgrade.cs",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Data\\Migrations\\20251204190541_ProductDetailsUpgrade.cs",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Data\\Migrations\\20251204190541_ProductDetailsUpgrade.cs",
+              "RelativeToolTip": "EcommerceFixed\\Data\\Migrations\\20251204190541_ProductDetailsUpgrade.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T19:05:44.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ChatController.cs",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Controllers\\ChatController.cs",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Controllers\\ChatController.cs",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Controllers\\ChatController.cs",
+              "RelativeToolTip": "EcommerceFixed\\Controllers\\ChatController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T03:04:41.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ProductImage.cs",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Models\\ProductImage.cs",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Models\\ProductImage.cs",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Models\\ProductImage.cs",
+              "RelativeToolTip": "EcommerceFixed\\Models\\ProductImage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T16:57:00.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IAModaService.cs",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Services\\IAModaService.cs",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Services\\IAModaService.cs",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Services\\IAModaService.cs",
+              "RelativeToolTip": "EcommerceFixed\\Services\\IAModaService.cs",
+              "ViewState": "AgIAAKwAAAAAAAAAAAAQwLsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T02:53:07.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\admin\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Pages\\admin\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\admin\\Index.cshtml.cs",
+              "RelativeToolTip": "EcommerceFixed\\Pages\\admin\\Index.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T09:04:43.286Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\admin\\Reviews\\Index.cshtml",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Pages\\admin\\Reviews\\Index.cshtml",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\admin\\Reviews\\Index.cshtml",
+              "RelativeToolTip": "EcommerceFixed\\Pages\\admin\\Reviews\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-23T22:44:14.595Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Models\\Product.cs",
+              "RelativeToolTip": "EcommerceFixed\\Models\\Product.cs",
+              "ViewState": "AgIAAIgAAAAAAAAAAAAQwJgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T22:25:59.475Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "EcommerceFixed\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAowBYAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T22:13:34.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\admin\\products\\Index.cshtml",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Pages\\admin\\products\\Index.cshtml",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\admin\\products\\Index.cshtml",
+              "RelativeToolTip": "EcommerceFixed\\Pages\\admin\\products\\Index.cshtml",
+              "ViewState": "AgIAALoAAAAAAAAAAAAAAC8BAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-23T22:43:40.995Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Pages\\admin\\Index.cshtml",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\admin\\Index.cshtml",
+              "RelativeToolTip": "EcommerceFixed\\Pages\\admin\\Index.cshtml",
+              "ViewState": "AgIAAKUAAAAAAAAAAAAQwMQAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-23T22:44:23.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ProductVote.cs",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Models\\ProductVote.cs",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Models\\ProductVote.cs",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Models\\ProductVote.cs",
+              "RelativeToolTip": "EcommerceFixed\\Models\\ProductVote.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAIwBYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T22:27:04.821Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ProductReview.cs",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Models\\ProductReview.cs",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Models\\ProductReview.cs",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Models\\ProductReview.cs",
+              "RelativeToolTip": "EcommerceFixed\\Models\\ProductReview.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T22:26:51.352Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\products\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Pages\\products\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\products\\Index.cshtml.cs",
+              "RelativeToolTip": "EcommerceFixed\\Pages\\products\\Index.cshtml.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAADwv2wAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T23:19:05.231Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Pages\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\Index.cshtml.cs",
+              "RelativeToolTip": "EcommerceFixed\\Pages\\Index.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T04:08:22.087Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\admin\\products\\Details.cshtml",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Pages\\admin\\products\\Details.cshtml",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\admin\\products\\Details.cshtml",
+              "RelativeToolTip": "EcommerceFixed\\Pages\\admin\\products\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYBAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-23T22:41:45.427Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\admin\\products\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Pages\\admin\\products\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\admin\\products\\Index.cshtml.cs",
+              "RelativeToolTip": "EcommerceFixed\\Pages\\admin\\products\\Index.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T22:43:30.724Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\admin\\categories\\Index.cshtml",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Pages\\admin\\categories\\Index.cshtml",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\admin\\categories\\Index.cshtml",
+              "RelativeToolTip": "EcommerceFixed\\Pages\\admin\\categories\\Index.cshtml",
+              "ViewState": "AgIAADkBAAAAAAAAAADwv1UBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-23T22:39:58.608Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Pages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\Index.cshtml",
+              "RelativeToolTip": "EcommerceFixed\\Pages\\Index.cshtml",
+              "ViewState": "AgIAALwAAAAAAAAAAAAIwNIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-23T22:50:54.398Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "chat.css",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\wwwroot\\css\\chat.css",
+              "RelativeDocumentMoniker": "EcommerceFixed\\wwwroot\\css\\chat.css",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\wwwroot\\css\\chat.css",
+              "RelativeToolTip": "EcommerceFixed\\wwwroot\\css\\chat.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-12-04T04:21:19.291Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "20251204024108_BotSchemaUpdate.cs",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Data\\Migrations\\20251204024108_BotSchemaUpdate.cs",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Data\\Migrations\\20251204024108_BotSchemaUpdate.cs",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Data\\Migrations\\20251204024108_BotSchemaUpdate.cs",
+              "RelativeToolTip": "EcommerceFixed\\Data\\Migrations\\20251204024108_BotSchemaUpdate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T02:41:11.606Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Program.cs",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Program.cs",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Program.cs",
+              "RelativeToolTip": "EcommerceFixed\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAI8AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T22:08:01.126Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\wishlist\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Pages\\wishlist\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\wishlist\\Index.cshtml.cs",
+              "RelativeToolTip": "EcommerceFixed\\Pages\\wishlist\\Index.cshtml.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAiwGAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T23:11:09.744Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Pages\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\Account\\Login.cshtml",
+              "RelativeToolTip": "EcommerceFixed\\Pages\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAMCAAAAAAAAAAAiwBoCAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-23T22:35:35.873Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Pages\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\Account\\Register.cshtml",
+              "RelativeToolTip": "EcommerceFixed\\Pages\\Account\\Register.cshtml",
+              "ViewState": "AgIAAIUCAAAAAAAAAAAAAJoCAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-23T22:37:23.257Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Test.cshtml",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\Test.cshtml",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Pages\\Test.cshtml",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\Test.cshtml",
+              "RelativeToolTip": "EcommerceFixed\\Pages\\Test.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-23T22:53:20.273Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "WishlistHelper.cs",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Helpers\\WishlistHelper.cs",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Helpers\\WishlistHelper.cs",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Helpers\\WishlistHelper.cs",
+              "RelativeToolTip": "EcommerceFixed\\Helpers\\WishlistHelper.cs",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAswIEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T22:56:22.638Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "UserWishlist.cs",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Models\\UserWishlist.cs",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Models\\UserWishlist.cs",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Models\\UserWishlist.cs",
+              "RelativeToolTip": "EcommerceFixed\\Models\\UserWishlist.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T22:27:20.965Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\checkout\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Pages\\checkout\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\checkout\\Index.cshtml.cs",
+              "RelativeToolTip": "EcommerceFixed\\Pages\\checkout\\Index.cshtml.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAiwEsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T02:13:54.088Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\checkout\\Index.cshtml",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Pages\\checkout\\Index.cshtml",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\checkout\\Index.cshtml",
+              "RelativeToolTip": "EcommerceFixed\\Pages\\checkout\\Index.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAcAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-23T22:47:18.946Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "CartHelper.cs",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Helpers\\CartHelper.cs",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Helpers\\CartHelper.cs",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Helpers\\CartHelper.cs",
+              "RelativeToolTip": "EcommerceFixed\\Helpers\\CartHelper.cs",
+              "ViewState": "AgIAAIEBAAAAAAAAAAAYwJQBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T22:55:12.763Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\cart\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Pages\\cart\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\cart\\Index.cshtml.cs",
+              "RelativeToolTip": "EcommerceFixed\\Pages\\cart\\Index.cshtml.cs",
+              "ViewState": "AgIAAJEAAAAAAAAAAAAiwKgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T01:47:27.219Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\cart\\Index.cshtml",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Pages\\cart\\Index.cshtml",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\cart\\Index.cshtml",
+              "RelativeToolTip": "EcommerceFixed\\Pages\\cart\\Index.cshtml",
+              "ViewState": "AgIAAKcAAAAAAAAAAAAYwL4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-23T22:45:10.366Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "UserCart.cs",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Models\\UserCart.cs",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Models\\UserCart.cs",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Models\\UserCart.cs",
+              "RelativeToolTip": "EcommerceFixed\\Models\\UserCart.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T22:27:12.492Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Pages\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "EcommerceFixed\\Pages\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-23T21:56:33.898Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\categories\\Create.cshtml",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Pages\\categories\\Create.cshtml",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\categories\\Create.cshtml",
+              "RelativeToolTip": "EcommerceFixed\\Pages\\categories\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-23T22:47:05.336Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\wishlist\\Index.cshtml",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Pages\\wishlist\\Index.cshtml",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\wishlist\\Index.cshtml",
+              "RelativeToolTip": "EcommerceFixed\\Pages\\wishlist\\Index.cshtml",
+              "ViewState": "AgIAALEAAAAAAAAAAAAAAMYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-23T23:10:22.758Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "bootstrap.min.css",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\wwwroot\\css\\bootstrap.min.css",
+              "RelativeDocumentMoniker": "EcommerceFixed\\wwwroot\\css\\bootstrap.min.css",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\wwwroot\\css\\bootstrap.min.css",
+              "RelativeToolTip": "EcommerceFixed\\wwwroot\\css\\bootstrap.min.css",
+              "ViewState": "AgIAABMwAAAAAAAAAADwvyswAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-11-24T05:44:50.106Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\myorders\\Index.cshtml",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Pages\\myorders\\Index.cshtml",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\myorders\\Index.cshtml",
+              "RelativeToolTip": "EcommerceFixed\\Pages\\myorders\\Index.cshtml",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAEgAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-23T22:48:20.796Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "UsersHelper.cs",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Helpers\\UsersHelper.cs",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Helpers\\UsersHelper.cs",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Helpers\\UsersHelper.cs",
+              "RelativeToolTip": "EcommerceFixed\\Helpers\\UsersHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T22:55:50.449Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\Profile\\Edit.cshtml",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Pages\\Profile\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\Profile\\Edit.cshtml",
+              "RelativeToolTip": "EcommerceFixed\\Pages\\Profile\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-23T22:49:13.195Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\myorders\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Pages\\myorders\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\myorders\\Index.cshtml.cs",
+              "RelativeToolTip": "EcommerceFixed\\Pages\\myorders\\Index.cshtml.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowCYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T01:47:56.574Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Models\\Category.cs",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Models\\Category.cs",
+              "RelativeToolTip": "EcommerceFixed\\Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T22:23:10.152Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "TestDb.cshtml",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\TestDb.cshtml",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Pages\\TestDb.cshtml",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\TestDb.cshtml",
+              "RelativeToolTip": "EcommerceFixed\\Pages\\TestDb.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-23T22:53:28.041Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\Error.cshtml",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Pages\\Error.cshtml",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\Error.cshtml",
+              "RelativeToolTip": "EcommerceFixed\\Pages\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-23T22:50:50.904Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Pages\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\_ViewImports.cshtml",
+              "RelativeToolTip": "EcommerceFixed\\Pages\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-23T22:17:28.522Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Pages\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\_ViewStart.cshtml",
+              "RelativeToolTip": "EcommerceFixed\\Pages\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-23T22:50:48.022Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "Error.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\Error.cshtml.cs",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Pages\\Error.cshtml.cs",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\Error.cshtml.cs",
+              "RelativeToolTip": "EcommerceFixed\\Pages\\Error.cshtml.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwAAAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T23:02:54.757Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Models\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Models\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Models\\ApplicationUser.cs",
+              "RelativeToolTip": "EcommerceFixed\\Models\\ApplicationUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T22:18:58.305Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "EcommerceFixed\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-23T22:50:31.868Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "_Toast.cshtml",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\Shared\\_Toast.cshtml",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Pages\\Shared\\_Toast.cshtml",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\Shared\\_Toast.cshtml",
+              "RelativeToolTip": "EcommerceFixed\\Pages\\Shared\\_Toast.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-23T22:50:25.898Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\categories\\Delete.cshtml",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Pages\\categories\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\categories\\Delete.cshtml",
+              "RelativeToolTip": "EcommerceFixed\\Pages\\categories\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-23T22:46:53.65Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\categories\\Details.cshtml",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Pages\\categories\\Details.cshtml",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\categories\\Details.cshtml",
+              "RelativeToolTip": "EcommerceFixed\\Pages\\categories\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-23T22:46:44.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\categories\\Edit.cshtml",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Pages\\categories\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\categories\\Edit.cshtml",
+              "RelativeToolTip": "EcommerceFixed\\Pages\\categories\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-23T22:46:31.897Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\categories\\Index.cshtml",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Pages\\categories\\Index.cshtml",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\categories\\Index.cshtml",
+              "RelativeToolTip": "EcommerceFixed\\Pages\\categories\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-23T22:46:16.06Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\admin\\products\\Delete.cshtml",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Pages\\admin\\products\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\admin\\products\\Delete.cshtml",
+              "RelativeToolTip": "EcommerceFixed\\Pages\\admin\\products\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-23T22:41:34.867Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "Logout.cshtml",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\Account\\Logout.cshtml",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Pages\\Account\\Logout.cshtml",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\Account\\Logout.cshtml",
+              "RelativeToolTip": "EcommerceFixed\\Pages\\Account\\Logout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-23T22:36:02.049Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "Delete.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\admin\\products\\Delete.cshtml.cs",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Pages\\admin\\products\\Delete.cshtml.cs",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\admin\\products\\Delete.cshtml.cs",
+              "RelativeToolTip": "EcommerceFixed\\Pages\\admin\\products\\Delete.cshtml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T22:43:16.858Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "Details.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\admin\\products\\Details.cshtml.cs",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Pages\\admin\\products\\Details.cshtml.cs",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\admin\\products\\Details.cshtml.cs",
+              "RelativeToolTip": "EcommerceFixed\\Pages\\admin\\products\\Details.cshtml.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T22:42:03.741Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "Edit.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\admin\\categories\\Edit.cshtml.cs",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Pages\\admin\\categories\\Edit.cshtml.cs",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\admin\\categories\\Edit.cshtml.cs",
+              "RelativeToolTip": "EcommerceFixed\\Pages\\admin\\categories\\Edit.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T22:41:02.335Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "Details.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\admin\\categories\\Details.cshtml.cs",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Pages\\admin\\categories\\Details.cshtml.cs",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\admin\\categories\\Details.cshtml.cs",
+              "RelativeToolTip": "EcommerceFixed\\Pages\\admin\\categories\\Details.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T22:40:51.445Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "Delete.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\admin\\categories\\Delete.cshtml.cs",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Pages\\admin\\categories\\Delete.cshtml.cs",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\admin\\categories\\Delete.cshtml.cs",
+              "RelativeToolTip": "EcommerceFixed\\Pages\\admin\\categories\\Delete.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T22:40:39.506Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "Create.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\admin\\categories\\Create.cshtml.cs",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Pages\\admin\\categories\\Create.cshtml.cs",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\admin\\categories\\Create.cshtml.cs",
+              "RelativeToolTip": "EcommerceFixed\\Pages\\admin\\categories\\Create.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T22:40:12.543Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\admin\\categories\\Edit.cshtml",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Pages\\admin\\categories\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\admin\\categories\\Edit.cshtml",
+              "RelativeToolTip": "EcommerceFixed\\Pages\\admin\\categories\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-23T22:39:52.304Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\admin\\categories\\Details.cshtml",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Pages\\admin\\categories\\Details.cshtml",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\admin\\categories\\Details.cshtml",
+              "RelativeToolTip": "EcommerceFixed\\Pages\\admin\\categories\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-23T22:39:46.273Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\admin\\categories\\Delete.cshtml",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Pages\\admin\\categories\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\admin\\categories\\Delete.cshtml",
+              "RelativeToolTip": "EcommerceFixed\\Pages\\admin\\categories\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-23T22:39:37.802Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\admin\\categories\\Create.cshtml",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Pages\\admin\\categories\\Create.cshtml",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\admin\\categories\\Create.cshtml",
+              "RelativeToolTip": "EcommerceFixed\\Pages\\admin\\categories\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-23T22:39:25.741Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "Register.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Pages\\Account\\Register.cshtml.cs",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeToolTip": "EcommerceFixed\\Pages\\Account\\Register.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T22:39:14.757Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "Logout.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\Account\\Logout.cshtml.cs",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Pages\\Account\\Logout.cshtml.cs",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\Account\\Logout.cshtml.cs",
+              "RelativeToolTip": "EcommerceFixed\\Pages\\Account\\Logout.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T22:39:06.77Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Pages\\Account\\Login.cshtml.cs",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeToolTip": "EcommerceFixed\\Pages\\Account\\Login.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T22:37:38.372Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Models\\Order.cs",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Models\\Order.cs",
+              "RelativeToolTip": "EcommerceFixed\\Models\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T22:23:28.586Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\appsettings.json",
+              "RelativeDocumentMoniker": "EcommerceFixed\\appsettings.json",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\appsettings.json",
+              "RelativeToolTip": "EcommerceFixed\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-23T22:10:46.767Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 78,
+              "Title": "SeedData.cs",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Data\\SeedData.cs",
+              "RelativeDocumentMoniker": "EcommerceFixed\\Data\\SeedData.cs",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\Data\\SeedData.cs",
+              "RelativeToolTip": "EcommerceFixed\\Data\\SeedData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T22:27:37.088Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 80,
+              "Title": "EcommerceFixed.csproj",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\EcommerceFixed.csproj",
+              "RelativeDocumentMoniker": "EcommerceFixed\\EcommerceFixed.csproj",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\videos\\proyecto\\EcommerceFixed\\EcommerceFixed\\EcommerceFixed.csproj",
+              "RelativeToolTip": "EcommerceFixed\\EcommerceFixed.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-23T22:14:25.522Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

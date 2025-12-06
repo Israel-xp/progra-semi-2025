@@ -1,0 +1,531 @@
+﻿@page "{id:int}"
+@model EcommerceFixed.Pages.products.DetailsModel
+@using Microsoft.AspNetCore.Identity
+@using EcommerceFixed.Models
+@inject UserManager<ApplicationUser> UserManager
+
+@{
+    ViewData["Title"] = Model.Product.Name;
+    var currentUser = await UserManager.GetUserAsync(User);
+}
+
+<input type="hidden" id="meta-product-id" value="@Model.Product.Id" />
+<input type="hidden" id="meta-product-cat" value="@Model.Product.ClothingType" />
+
+<style>
+    /* === ESTILOS PREMIUM === */
+    .product-detail-container {
+        padding-top: 2rem;
+        padding-bottom: 5rem;
+    }
+
+    /* Galería */
+    .gallery-sticky {
+        position: sticky;
+        top: 90px;
+    }
+
+    .main-img-wrap {
+        background: #fff;
+        border-radius: 0;
+        overflow: hidden;
+        margin-bottom: 10px;
+        position: relative;
+    }
+
+    .main-img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .thumbs-row {
+        display: flex;
+        gap: 10px;
+        overflow-x: auto;
+        padding-bottom: 5px;
+    }
+
+    .thumb-btn {
+        width: 70px;
+        height: 90px;
+        border: none;
+        padding: 0;
+        opacity: 0.6;
+        transition: 0.3s;
+        cursor: pointer;
+        flex-shrink: 0;
+    }
+
+        .thumb-btn.active, .thumb-btn:hover {
+            opacity: 1;
+            border: 2px solid #000;
+        }
+
+    .thumb-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Info Producto */
+    .product-brand {
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #888;
+        font-weight: 600;
+    }
+
+    .product-title {
+        font-family: 'Playfair Display', serif;
+        font-size: 2.2rem;
+        font-weight: 700;
+        line-height: 1.1;
+        margin: 5px 0;
+    }
+
+    .product-price {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #000;
+    }
+
+    .old-price {
+        text-decoration: line-through;
+        color: #999;
+        font-size: 1rem;
+        margin-left: 8px;
+    }
+
+    /* Tallas */
+    .size-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin: 15px 0;
+    }
+
+    .size-radio {
+        display: none;
+    }
+
+    .size-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 45px;
+        height: 45px;
+        border: 1px solid #ddd;
+        background: #fff;
+        cursor: pointer;
+        transition: 0.2s;
+        font-weight: 500;
+        font-size: 0.9rem;
+    }
+
+        .size-box:hover {
+            border-color: #000;
+        }
+
+    .size-radio:checked + .size-box {
+        background: #000;
+        color: #fff;
+        border-color: #000;
+    }
+
+    /* Botones Acción */
+    .btn-black-lg {
+        background: #000;
+        color: #fff;
+        width: 100%;
+        padding: 15px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 700;
+        border: none;
+        transition: 0.3s;
+        font-size: 0.9rem;
+    }
+
+        .btn-black-lg:hover {
+            background: #333;
+            color: #fff;
+            transform: translateY(-2px);
+        }
+
+    .btn-fav-lg {
+        width: 54px;
+        height: 54px;
+        border: 1px solid #eee;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        color: #000;
+        transition: 0.3s;
+    }
+
+        .btn-fav-lg:hover {
+            color: #e74c3c;
+            border-color: #e74c3c;
+        }
+
+    /* Acordeones */
+    .accordion-item {
+        border: none;
+        border-bottom: 1px solid #eee;
+    }
+
+    .accordion-button {
+        padding: 1.2rem 0;
+        font-weight: 600;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        box-shadow: none !important;
+        background: transparent !important;
+        color: #000 !important;
+    }
+
+    /* Reseñas */
+    .review-avatar {
+        width: 45px;
+        height: 45px;
+        background: #f0f2f5;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        color: #555;
+        flex-shrink: 0;
+    }
+
+    .star-rating-input {
+        direction: rtl;
+        display: inline-flex;
+    }
+
+        .star-rating-input input {
+            display: none;
+        }
+
+        .star-rating-input label {
+            font-size: 1.4rem;
+            color: #ddd;
+            cursor: pointer;
+            padding: 0 2px;
+        }
+
+            .star-rating-input input:checked ~ label, .star-rating-input label:hover, .star-rating-input label:hover ~ label {
+                color: #ffc107;
+            }
+
+    /* Sugerencias */
+    .card-suggest {
+        border: none;
+        transition: 0.3s;
+    }
+
+        .card-suggest:hover {
+            transform: translateY(-5px);
+        }
+
+    .img-suggest {
+        aspect-ratio: 3/4;
+        object-fit: cover;
+        width: 100%;
+        border-radius: 0;
+    }
+</style>
+
+<div class="container product-detail-container">
+
+    <nav aria-label="breadcrumb" class="mb-4 d-none d-md-block">
+        <ol class="breadcrumb small text-uppercase">
+            <li class="breadcrumb-item"><a href="/" class="text-muted text-decoration-none">Inicio</a></li>
+            <li class="breadcrumb-item"><a href="/products" class="text-muted text-decoration-none">Tienda</a></li>
+            <li class="breadcrumb-item active text-dark">@Model.Product.Name</li>
+        </ol>
+    </nav>
+
+    <div class="row g-5">
+
+        <div class="col-lg-7">
+            <div class="gallery-sticky">
+                <div class="main-img-wrap">
+                    <img src="@Model.Product.ImageLocation" id="mainImage" class="main-img" alt="@Model.Product.Name"
+                         onerror="this.src='https://via.placeholder.com/600x800?text=No+Image'">
+
+                    <div class="position-absolute top-0 start-0 p-3">
+                        @if (Model.Product.HasDiscount)
+                        {
+                            <span class="badge bg-danger rounded-0 py-2 px-3">-@Model.Product.Discount%</span>
+                        }
+                        @if (Model.Product.IsFeatured)
+                        {
+                            <span class="badge bg-warning text-dark rounded-0 py-2 px-3 ms-1">HOT</span>
+                        }
+                    </div>
+                </div>
+
+                <div class="thumbs-row hide-scrollbar">
+                    <button class="thumb-btn active" onclick="changeImage(this, '@Model.Product.ImageLocation')">
+                        <img src="@Model.Product.ImageLocation" class="thumb-img">
+                    </button>
+                    @foreach (var img in Model.Product.Images)
+                    {
+                        <button class="thumb-btn" onclick="changeImage(this, '@img.ImageUrl')">
+                            <img src="@img.ImageUrl" class="thumb-img">
+                        </button>
+                    }
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-5">
+            <div class="ps-lg-3">
+                <div class="product-brand">@Model.Product.Category?.Name • @Model.Product.Gender</div>
+                <h1 class="product-title">@Model.Product.Name</h1>
+
+                <div class="d-flex align-items-center gap-3 mb-3">
+                    @if (Model.Product.HasDiscount)
+                    {
+                        <div>
+                            <span class="product-price text-danger">@Model.Product.PriceAfterDiscount.ToString("C")</span>
+                            <span class="old-price">@Model.Product.Price.ToString("C")</span>
+                        </div>
+                    }
+                    else
+                    {
+                        <span class="product-price">@Model.Product.Price.ToString("C")</span>
+                    }
+
+                    <div class="d-flex align-items-center text-warning small">
+                        @for (int i = 1; i <= 5; i++)
+                        {
+                            <i class="bi bi-star-fill @(i <= Model.Product.AverageRating ? "" : "text-secondary text-opacity-25")"></i>
+                        }
+                        <a href="#reviews" class="text-muted ms-2 text-decoration-underline">(@Model.Reviews.Count)</a>
+                    </div>
+                </div>
+
+                <p class="text-muted mb-4" style="line-height: 1.6;">@Model.Product.Desc</p>
+
+                <form method="post" asp-page-handler="AddToCart" asp-route-productId="@Model.Product.Id">
+
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="fw-bold small text-uppercase">Talla</span>
+                            <a href="#" class="text-muted small text-decoration-underline" data-bs-toggle="modal" data-bs-target="#sizeGuide">Guía de tallas</a>
+                        </div>
+
+                        <div class="size-grid">
+                            @foreach (var size in Model.SizeList)
+                            {
+                                <input type="radio" name="SelectedSize" id="size-@size" value="@size" class="size-radio" required>
+                                <label for="size-@size" class="size-box">@size</label>
+                            }
+                        </div>
+                        @if (TempData["error"] != null)
+                        {
+                            <div class="text-danger small mt-1"><i class="bi bi-exclamation-circle"></i> @TempData["error"]</div>
+                        }
+                    </div>
+
+                    <div class="d-flex gap-2 mb-4">
+                        @if (!Model.Product.IsOutOfStock)
+                        {
+                            <button type="submit" class="btn-black-lg flex-grow-1">
+                                AÑADIR A LA BOLSA
+                            </button>
+                        }
+                        else
+                        {
+                            <button type="button" class="btn-black-lg flex-grow-1 bg-secondary" disabled>AGOTADO</button>
+                        }
+
+                        <button type="submit" asp-page-handler="AddToWishlist" asp-route-productId="@Model.Product.Id" class="btn-fav-lg" title="Favoritos">
+                            <i class="bi bi-heart"></i>
+                        </button>
+                    </div>
+
+                    <div class="small text-muted mb-4">
+                        @if (Model.Product.Quantity < 5 && !Model.Product.IsOutOfStock)
+                        {
+                            <span class="text-danger fw-bold"><i class="bi bi-fire"></i> ¡Date prisa! Quedan @Model.Product.Quantity unidades</span>
+                        }
+                        else if (!Model.Product.IsOutOfStock)
+                        {
+                            <span class="text-success"><i class="bi bi-check-circle"></i> Disponible para envío inmediato</span>
+                        }
+                    </div>
+                </form>
+
+                <div class="accordion accordion-flush border-top" id="productInfo">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#info1">
+                                Detalles y Composición
+                            </button>
+                        </h2>
+                        <div id="info1" class="accordion-collapse collapse" data-bs-parent="#productInfo">
+                            <div class="accordion-body small text-muted">
+                                <p><strong>Material:</strong> @Model.Product.Material</p>
+                                <p><strong>Color:</strong> @Model.Product.Color</p>
+                                <p>Diseñado para durar. Lavar a máquina en frío.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#info2">
+                                Estilo IA (Smart Data)
+                            </button>
+                        </h2>
+                        <div id="info2" class="accordion-collapse collapse" data-bs-parent="#productInfo">
+                            <div class="accordion-body small text-muted">
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="badge bg-light text-dark border">@Model.Product.Style</span>
+                                    <span class="badge bg-light text-dark border">@Model.Product.Occasion</span>
+                                    <span class="badge bg-light text-dark border">@Model.Product.Season</span>
+                                    <span class="badge bg-light text-dark border">Formalidad: @Model.Product.FormalityLevel/5</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5 pt-5 border-top" id="reviews">
+        <div class="col-lg-8 mx-auto">
+            <h3 class="fw-bold mb-4 text-center">Opiniones de Clientes</h3>
+
+            @if (User.Identity.IsAuthenticated)
+            {
+                <div class="card border-0 bg-light mb-5">
+                    <div class="card-body p-4">
+                        <h6 class="fw-bold mb-3">Deja tu valoración</h6>
+                        <form method="post" asp-page-handler="AddReview" enctype="multipart/form-data">
+                            <input type="hidden" name="productId" value="@Model.Product.Id" />
+
+                            <div class="mb-3">
+                                <div class="star-rating-input">
+                                    <input type="radio" id="s5" name="ReviewInput.Rating" value="5" checked><label for="s5">★</label>
+                                    <input type="radio" id="s4" name="ReviewInput.Rating" value="4"><label for="s4">★</label>
+                                    <input type="radio" id="s3" name="ReviewInput.Rating" value="3"><label for="s3">★</label>
+                                    <input type="radio" id="s2" name="ReviewInput.Rating" value="2"><label for="s2">★</label>
+                                    <input type="radio" id="s1" name="ReviewInput.Rating" value="1"><label for="s1">★</label>
+                                </div>
+                            </div>
+
+                            <textarea name="ReviewInput.Comment" class="form-control mb-3 border-0" rows="3" placeholder="¿Qué te pareció? Escribe aquí..." required></textarea>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <input type="file" name="ReviewInput.ReviewImageFile" class="form-control form-control-sm w-50" accept="image/*">
+                                <button type="submit" class="btn btn-dark px-4 rounded-pill">Publicar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            }
+            else
+            {
+                <div class="text-center mb-5">
+                    <a href="/Identity/Account/Login" class="text-decoration-underline fw-bold text-dark">Inicia sesión</a> para escribir una reseña.
+                </div>
+            }
+
+            <div class="vstack gap-4">
+                @if (Model.Reviews.Any())
+                {
+                    foreach (var review in Model.Reviews)
+                    {
+                        <div class="d-flex gap-3 pb-4 border-bottom">
+                            <div class="review-avatar">
+                                @(review.UserDisplayName?.Substring(0, 1).ToUpper() ?? "U")
+                            </div>
+                            <div class="flex-grow-1">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <strong class="text-dark">@review.UserDisplayName</strong>
+                                    <small class="text-muted">@review.DateCreated.ToString("dd/MM/yyyy")</small>
+                                </div>
+                                <div class="text-warning small mb-2">
+                                    @for (int i = 0; i < review.Rating; i++)
+                                    {
+                                        <i class="bi bi-star-fill"></i>
+                                    }
+                                </div>
+                                <p class="text-muted mb-2">@review.Comment</p>
+
+                                @if (!string.IsNullOrEmpty(review.ReviewImage))
+                                {
+                                    <img src="@review.ReviewImage" class="rounded mb-2" style="height: 80px;">
+                                }
+
+                                @if (currentUser != null && (review.UserId == currentUser.Id || User.IsInRole("Admin")))
+                                {
+                                    <form method="post" asp-page-handler="DeleteReview" asp-route-reviewId="@review.Id" asp-route-productId="@Model.Product.Id">
+                                        <button class="btn btn-link text-danger p-0 text-decoration-none small">Eliminar</button>
+                                    </form>
+                                }
+                            </div>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <p class="text-center text-muted">Aún no hay reseñas. ¡Sé el primero!</p>
+                }
+            </div>
+        </div>
+    </div>
+
+    @if (Model.RelatedProducts.Any())
+    {
+        <div class="mt-5 pt-5">
+            <h4 class="text-center font-playfair fw-bold mb-4">También te podría gustar</h4>
+            <div class="row g-4">
+                @foreach (var p in Model.RelatedProducts)
+                {
+                    <div class="col-6 col-md-3">
+                        <div class="card card-suggest">
+                            <a href="/products/Details/@p.Id">
+                                <img src="@p.ImageLocation" class="img-suggest" alt="@p.Name">
+                            </a>
+                            <div class="text-center mt-2">
+                                <h6 class="mb-0 text-truncate px-2">@p.Name</h6>
+                                <span class="text-muted small">@p.Price.ToString("C")</span>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    }
+</div>
+
+<div class="modal fade" id="sizeGuide" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header border-0"><h5 class="modal-title fw-bold">Guía de Tallas</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+            <div class="modal-body">
+                <img src="https://via.placeholder.com/500x300?text=Tabla+de+Tallas" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        function changeImage(btn, src) {
+            document.getElementById('mainImage').src = src;
+            document.querySelectorAll('.thumb-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+        }
+    </script>
+}

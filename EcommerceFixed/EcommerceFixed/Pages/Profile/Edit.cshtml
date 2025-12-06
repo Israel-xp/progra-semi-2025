@@ -1,0 +1,116 @@
+﻿@page
+@model EcommerceFixed.Pages.Profile.EditModel
+@{
+    ViewData["Title"] = "Editar Perfil";
+}
+
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card border-0 shadow">
+                <div class="card-header bg-primary text-white py-3">
+                    <h2 class="h4 mb-0"><i class="fas fa-user-edit me-2"></i>Editar Perfil</h2>
+                </div>
+                <div class="card-body p-4">
+                    <!-- Mensajes de alerta -->
+                    @if (TempData["success"] != null)
+                    {
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            <strong>¡Éxito!</strong> @TempData["success"]
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    }
+
+                    <form method="post" enctype="multipart/form-data">
+                        <div class="row g-3">
+                            <!-- Foto de perfil -->
+                            <div class="col-12 text-center mb-4">
+                                <div class="position-relative d-inline-block">
+                                    <img id="profilePicturePreview" src="@(Model.Input.ProfilePicture ?? "/images/default-avatar.png")"
+                                         class="rounded-circle shadow"
+                                         style="width: 150px; height: 150px; object-fit: cover;"
+                                         alt="Foto de perfil">
+                                    <label for="profilePictureInput" class="btn btn-primary btn-sm position-absolute bottom-0 end-0 rounded-circle" style="width: 40px; height: 40px;">
+                                        <i class="fas fa-camera"></i>
+                                    </label>
+                                    <input asp-for="Input.ProfilePictureFile" type="file" accept="image/*"
+                                           class="d-none" id="profilePictureInput" onchange="previewImage(this)">
+                                </div>
+                            </div>
+
+                            <!-- Nombre -->
+                            <div class="col-md-6">
+                                <label asp-for="Input.FirstName" class="form-label">Nombre</label>
+                                <input asp-for="Input.FirstName" class="form-control" placeholder="Tu nombre">
+                                <span asp-validation-for="Input.FirstName" class="text-danger small"></span>
+                            </div>
+
+                            <!-- Apellido -->
+                            <div class="col-md-6">
+                                <label asp-for="Input.LastName" class="form-label">Apellido</label>
+                                <input asp-for="Input.LastName" class="form-control" placeholder="Tu apellido">
+                                <span asp-validation-for="Input.LastName" class="text-danger small"></span>
+                            </div>
+
+                            <!-- Fecha de nacimiento -->
+                            <div class="col-md-6">
+                                <label asp-for="Input.DateOfBirth" class="form-label">Fecha de Nacimiento</label>
+                                <input asp-for="Input.DateOfBirth" type="date" class="form-control">
+                                <span asp-validation-for="Input.DateOfBirth" class="text-danger small"></span>
+                            </div>
+
+                            <!-- Dirección -->
+                            <div class="col-12">
+                                <label asp-for="Input.ShippingAddress" class="form-label">Dirección de Envío</label>
+                                <input asp-for="Input.ShippingAddress" class="form-control" placeholder="Tu dirección completa">
+                                <span asp-validation-for="Input.ShippingAddress" class="text-danger small"></span>
+                            </div>
+
+                            <!-- Ciudad, Estado, Código Postal -->
+                            <div class="col-md-4">
+                                <label asp-for="Input.City" class="form-label">Ciudad</label>
+                                <input asp-for="Input.City" class="form-control" placeholder="Ciudad">
+                                <span asp-validation-for="Input.City" class="text-danger small"></span>
+                            </div>
+
+                            <div class="col-md-4">
+                                <label asp-for="Input.State" class="form-label">Provincia/Estado</label>
+                                <input asp-for="Input.State" class="form-control" placeholder="Provincia/Estado">
+                                <span asp-validation-for="Input.State" class="text-danger small"></span>
+                            </div>
+
+                            <div class="col-md-4">
+                                <label asp-for="Input.PostalCode" class="form-label">Código Postal</label>
+                                <input asp-for="Input.PostalCode" class="form-control" placeholder="Código Postal">
+                                <span asp-validation-for="Input.PostalCode" class="text-danger small"></span>
+                            </div>
+
+                            <!-- Botones -->
+                            <div class="col-12 mt-4">
+                                <div class="d-flex justify-content-between">
+                                    <a asp-page="/Index" class="btn btn-outline-secondary">Cancelar</a>
+                                    <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        function previewImage(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    document.getElementById('profilePicturePreview').src = e.target.result;
+                };
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+    </script>
+}

@@ -1,0 +1,191 @@
+﻿@page
+@using EcommerceFixed.Models
+@using Microsoft.AspNetCore.Identity;
+@using EcommerceFixed.Helpers;
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+@model EcommerceFixed.Pages.cart.IndexModel;
+@{
+    ViewData["Title"] = "Cart";
+}
+
+<!-- Mensajes de alerta -->
+@if (TempData["success"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show mb-4" role="alert">
+        <strong>¡Éxito!</strong> @TempData["success"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+@if (TempData["error"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show mb-4" role="alert">
+        <strong>Error:</strong> @TempData["error"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+<h1 class="pt-3">🛒 Carrito</h1>
+
+@* if there are items in the user's cart, show cart details *@
+@if (SignInManager.IsSignedIn(User) && Model.Products.Count > 0)
+{
+    <div class="row">
+        <div class="col-lg-8">
+            @foreach (var product in Model.Products)
+            {
+                <div class="card mb-3 border-0 shadow-sm">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-md-2">
+                                <img src="@product.ImageLocation"
+                                     class="img-fluid rounded"
+                                     alt="@product.Name"
+                                     style="max-height: 100px; object-fit: cover;">
+                            </div>
+                            <div class="col-md-4">
+                                <h5 class="card-title fw-bold">@product.Name</h5>
+                                <p class="text-muted mb-1">
+                                    @if (product.HasDiscount)
+                                    {
+                                        <span class="text-decoration-line-through text-muted me-2">
+                                            @product.Price.ToString("c2")
+                                        </span>
+                                        <span class="fw-bold text-success">
+                                            @product.PriceAfterDiscount.ToString("c2")
+                                        </span>
+                                    }
+                                    else
+                                    {
+                                        <span class="fw-bold">@product.Price.ToString("c2")</span>
+                                    }
+                                </p>
+                                @if (product.IsOutOfStock)
+                                {
+                                    <span class="badge bg-warning text-dark">Agotado</span>
+                                }
+                            </div>
+                            <div class="col-md-3">
+                                <div class="d-flex align-items-center">
+                                    <span class="fw-bold me-3">Cantidad: @product.CartQuantity</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="d-flex gap-2">
+                                    <!-- Botón para agregar más -->
+                                    @if (product.IsOutOfStock)
+                                    {
+                                        <button class="btn btn-success btn-sm" disabled>
+                                            <i class="fas fa-plus"></i>
+                                        </button>
+                                    }
+                                    else
+                                    {
+                                        <form method="post" class="d-inline">
+                                            <button asp-page-handler="AddToCart"
+                                                    asp-route-productId="@product.Id"
+                                                    class="btn btn-success btn-sm">
+                                                <i class="fas fa-plus"></i>
+                                            </button>
+                                        </form>
+                                    }
+
+                                    <!-- Botón para quitar uno -->
+                                    <form method="post" class="d-inline">
+                                        <button asp-page-handler="RemoveFromCart"
+                                                asp-route-productId="@product.Id"
+                                                class="btn btn-warning btn-sm">
+                                            <i class="fas fa-minus"></i>
+                                        </button>
+                                    </form>
+
+                                    <!-- Botón para quitar todos -->
+                                    <form method="post" class="d-inline">
+                                        <button asp-page-handler="RemoveAllFromCart"
+                                                asp-route-productId="@product.Id"
+                                                class="btn btn-danger btn-sm"
+                                                onclick="return confirm('¿Estás seguro de que quieres eliminar todos los items de @product.Name?')">
+                                            <i class="fas fa-trash"></i>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+
+        <div class="col-lg-4">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Resumen del Pedido</h5>
+
+                    <div class="d-flex justify-content-between mb-2">
+                        <span>Subtotal:</span>
+                        <span>@Model.CartTotal</span>
+                    </div>
+
+                    <div class="d-flex justify-content-between mb-2">
+                        <span>Envío:</span>
+                        <span class="text-success">Gratis</span>
+                    </div>
+
+                    <hr>
+
+                    <div class="d-flex justify-content-between mb-3">
+                        <strong>Total:</strong>
+                        <strong>@Model.CartTotal</strong>
+                    </div>
+
+                    <a href="/checkout" class="btn btn-primary w-100 py-2">
+                        <i class="fas fa-credit-card me-2"></i>Proceder al Pago
+                    </a>
+
+                    <div class="text-center mt-3">
+                        <a href="/products" class="text-decoration-none">
+                            <i class="fas fa-arrow-left me-1"></i>Seguir Comprando
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+else if (SignInManager.IsSignedIn(User) && Model.Products.Count == 0)
+{
+    <div class="text-center py-5">
+        <i class="fas fa-shopping-cart fa-4x text-muted mb-3"></i>
+        <h3 class="text-muted">Tu carrito está vacío</h3>
+        <p class="text-muted mb-4">Agrega algunos productos para continuar</p>
+        <a href="/products" class="btn btn-primary btn-lg">
+            <i class="fas fa-store me-2"></i>Explorar Productos
+        </a>
+    </div>
+}
+else
+{
+    <div class="text-center py-5">
+        <i class="fas fa-shopping-cart fa-4x text-muted mb-3"></i>
+        <h3 class="text-muted">Inicia sesión para ver tu carrito</h3>
+        <p class="text-muted mb-4">Debes iniciar sesión para gestionar tu carrito de compras.</p>
+        <a href="/Account/Login" class="btn btn-primary btn-lg me-2">Iniciar Sesión</a>
+        <a href="/Account/Register" class="btn btn-outline-primary btn-lg">Registrarse</a>
+    </div>
+}
+
+@section Scripts {
+    <script>
+        // Auto-dismiss alerts after 5 seconds
+        document.addEventListener('DOMContentLoaded', function() {
+            const alerts = document.querySelectorAll('.alert');
+            alerts.forEach(alert => {
+                setTimeout(() => {
+                    const bsAlert = new bootstrap.Alert(alert);
+                    bsAlert.close();
+                }, 5000);
+            });
+        });
+    </script>
+}

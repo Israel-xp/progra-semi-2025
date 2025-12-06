@@ -1,0 +1,342 @@
+﻿@page
+@model EcommerceFixed.Pages.admin.categories.IndexModel
+
+@{
+    ViewData["Title"] = "Gestión de Categorías | Admin";
+}
+
+<style>
+    /* Fondo suave para el panel */
+    body {
+        background-color: #f8f9fa;
+    }
+
+    /* Cards Premium */
+    .admin-card {
+        background: white;
+        border: none;
+        border-radius: 16px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+        transition: transform 0.3s ease;
+    }
+
+        .admin-card:hover {
+            transform: translateY(-5px);
+        }
+
+    /* Iconos de Estadísticas */
+    .stat-icon-wrapper {
+        width: 50px;
+        height: 50px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+    }
+
+    .bg-gradient-primary-soft {
+        background: linear-gradient(135deg, rgba(13,110,253,0.1), rgba(13,110,253,0.2));
+        color: #0d6efd;
+    }
+
+    .bg-gradient-success-soft {
+        background: linear-gradient(135deg, rgba(25,135,84,0.1), rgba(25,135,84,0.2));
+        color: #198754;
+    }
+
+    .bg-gradient-warning-soft {
+        background: linear-gradient(135deg, rgba(255,193,7,0.1), rgba(255,193,7,0.2));
+        color: #ffc107;
+    }
+
+    /* Tabla Estilizada */
+    .table-custom thead th {
+        border-bottom: none;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #6c757d;
+        background-color: #fff;
+        padding: 1rem;
+    }
+
+    .table-custom tbody td {
+        padding: 1.2rem 1rem;
+        vertical-align: middle;
+        border-bottom: 1px solid #f0f0f0;
+        font-size: 0.95rem;
+    }
+
+    .category-row:last-child td {
+        border-bottom: none;
+    }
+
+    .category-avatar {
+        width: 40px;
+        height: 40px;
+        background: #f1f3f5;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #495057;
+        font-weight: bold;
+        font-size: 1.1rem;
+    }
+
+    /* Botones de Acción */
+    .btn-icon {
+        width: 35px;
+        height: 35px;
+        border-radius: 8px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.2s;
+        border: 1px solid transparent;
+    }
+
+        .btn-icon:hover {
+            transform: scale(1.1);
+        }
+
+    .btn-icon-edit {
+        color: #fd7e14;
+        background: rgba(253,126,20,0.1);
+    }
+
+        .btn-icon-edit:hover {
+            background: #fd7e14;
+            color: white;
+        }
+
+    .btn-icon-delete {
+        color: #dc3545;
+        background: rgba(220,53,69,0.1);
+    }
+
+        .btn-icon-delete:hover {
+            background: #dc3545;
+            color: white;
+        }
+
+    .btn-icon-view {
+        color: #0d6efd;
+        background: rgba(13,110,253,0.1);
+    }
+
+        .btn-icon-view:hover {
+            background: #0d6efd;
+            color: white;
+        }
+
+</style>
+
+<div class="position-fixed top-0 end-0 p-3" style="z-index: 1050; margin-top: 80px;">
+    @if (TempData["success"] != null)
+    {
+        <div class="toast show align-items-center text-white bg-success border-0 shadow-lg" role="alert">
+            <div class="d-flex">
+                <div class="toast-body"><i class="fas fa-check-circle me-2"></i>@TempData["success"]</div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+            </div>
+        </div>
+    }
+    @if (TempData["error"] != null)
+    {
+        <div class="toast show align-items-center text-white bg-danger border-0 shadow-lg" role="alert">
+            <div class="d-flex">
+                <div class="toast-body"><i class="fas fa-exclamation-triangle me-2"></i>@TempData["error"]</div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+            </div>
+        </div>
+    }
+</div>
+
+<div class="container-fluid px-4 py-5">
+
+    <div class="d-flex justify-content-between align-items-end mb-5">
+        <div>
+            <h6 class="text-uppercase text-muted small fw-bold mb-1">Panel de Administración</h6>
+            <h2 class="fw-bold text-dark mb-0">Categorías</h2>
+        </div>
+        <a asp-page="Create" class="btn btn-dark rounded-pill px-4 py-2 shadow-sm d-flex align-items-center">
+            <i class="fas fa-plus me-2"></i>Nueva Categoría
+        </a>
+    </div>
+
+    <div class="row g-4 mb-5">
+        <div class="col-md-4">
+            <div class="admin-card p-4">
+                <div class="d-flex justify-content-between align-items-start">
+                    <div>
+                        <p class="text-muted small text-uppercase fw-bold mb-1">Total Categorías</p>
+                        <h2 class="mb-0 fw-bold text-dark">@Model.Categories.Count</h2>
+                    </div>
+                    <div class="stat-icon-wrapper bg-gradient-primary-soft">
+                        <i class="fas fa-tags"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="admin-card p-4">
+                <div class="d-flex justify-content-between align-items-start">
+                    <div>
+                        <p class="text-muted small text-uppercase fw-bold mb-1">Activas</p>
+                        <h2 class="mb-0 fw-bold text-success">@Model.Categories.Count</h2>
+                    </div>
+                    <div class="stat-icon-wrapper bg-gradient-success-soft">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="admin-card p-4">
+                <div class="d-flex justify-content-between align-items-start">
+                    <div>
+                        <p class="text-muted small text-uppercase fw-bold mb-1">Más Popular</p>
+                        <h5 class="mb-0 fw-bold text-dark text-truncate" style="max-width: 150px;">
+                            @(Model.Categories.FirstOrDefault()?.Name ?? "N/A")
+                        </h5>
+                    </div>
+                    <div class="stat-icon-wrapper bg-gradient-warning-soft">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card border-0 shadow-sm rounded-4 overflow-hidden">
+        <div class="card-header bg-white border-0 py-3 px-4">
+            <div class="d-flex justify-content-between align-items-center">
+                <h5 class="mb-0 fw-bold text-dark">Listado Completo</h5>
+
+                <div class="input-group" style="width: 250px;">
+                    <span class="input-group-text bg-light border-0"><i class="fas fa-search text-muted"></i></span>
+                    <input type="text" class="form-control bg-light border-0" placeholder="Buscar..." id="categorySearch">
+                </div>
+            </div>
+        </div>
+
+        <div class="card-body p-0">
+            @if (Model.Categories.Any())
+            {
+                <div class="table-responsive">
+                    <table class="table table-custom mb-0" id="categoriesTable">
+                        <thead>
+                            <tr>
+                                <th class="ps-4">Categoría</th>
+                                <th>ID</th>
+                                <th>Estado</th>
+                                <th class="text-end pe-4">Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.Categories)
+                            {
+                                <tr class="category-row">
+                                    <td class="ps-4">
+                                        <div class="d-flex align-items-center">
+                                            <div class="category-avatar me-3 shadow-sm">
+                                                @(item.Name.Length > 0 ? item.Name.Substring(0, 1).ToUpper() : "?")
+                                            </div>
+                                            <div>
+                                                <h6 class="mb-0 fw-bold text-dark">@item.Name</h6>
+                                                <small class="text-muted">ID de Sistema: @item.Id</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="badge bg-light text-dark border">#@item.Id</span>
+                                    </td>
+                                    <td>
+                                        <span class="badge rounded-pill bg-success bg-opacity-10 text-success px-3 py-2">
+                                            <i class="fas fa-dot-circle me-1 small"></i> Activo
+                                        </span>
+                                    </td>
+                                    <td class="text-end pe-4">
+                                        <div class="d-flex justify-content-end gap-2">
+                                            <a asp-page="./Edit" asp-route-id="@item.Id" class="btn-icon btn-icon-edit" title="Editar">
+                                                <i class="fas fa-pen small"></i>
+                                            </a>
+                                            <a asp-page="./Details" asp-route-id="@item.Id" class="btn-icon btn-icon-view" title="Ver Detalles">
+                                                <i class="fas fa-eye small"></i>
+                                            </a>
+                                            <a asp-page="./Delete" asp-route-id="@item.Id" class="btn-icon btn-icon-delete" title="Eliminar">
+                                                <i class="fas fa-trash-alt small"></i>
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            }
+            else
+            {
+                <div class="text-center py-5">
+                    <div class="mb-3">
+                        <i class="fas fa-folder-open fa-3x text-light"></i>
+                    </div>
+                    <h5 class="text-muted">No hay categorías registradas</h5>
+                    <p class="text-muted small mb-4">Empieza a organizar tu tienda creando una nueva.</p>
+                    <a asp-page="Create" class="btn btn-primary rounded-pill">Crear Categoría</a>
+                </div>
+            }
+        </div>
+
+        @if (Model.Categories.Any())
+        {
+            <div class="card-footer bg-white border-0 py-3 px-4">
+                <div class="d-flex justify-content-between align-items-center">
+                    <small class="text-muted">Mostrando @Model.Categories.Count registros</small>
+                    <nav>
+                        <ul class="pagination pagination-sm mb-0">
+                            <li class="page-item disabled"><a class="page-link border-0" href="#">&laquo;</a></li>
+                            <li class="page-item active"><a class="page-link border-0 bg-dark" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link border-0 text-dark" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link border-0 text-dark" href="#">&raquo;</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // Auto-close toasts
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                document.querySelectorAll('.toast').forEach(el => {
+                    var toast = new bootstrap.Toast(el);
+                    toast.hide();
+                });
+            }, 4000);
+
+            // Buscador simple en JS (Filtra la tabla en tiempo real)
+            const searchInput = document.getElementById('categorySearch');
+            const tableRows = document.querySelectorAll('#categoriesTable tbody tr');
+
+            if(searchInput) {
+                searchInput.addEventListener('keyup', function(e) {
+                    const text = e.target.value.toLowerCase();
+                    tableRows.forEach(row => {
+                        const categoryName = row.querySelector('h6').textContent.toLowerCase();
+                        if(categoryName.includes(text)) {
+                            row.style.display = '';
+                        } else {
+                            row.style.display = 'none';
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+}

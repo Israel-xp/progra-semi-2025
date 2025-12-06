@@ -1,0 +1,82 @@
+﻿@page
+@using EcommerceFixed.Models
+@using Microsoft.AspNetCore.Identity;
+@using EcommerceFixed.Helpers;
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+@model EcommerceFixed.Pages.myorders.IndexModel
+
+@{
+    ViewData["Title"] = "My Orders";
+}
+
+<h1 class="py-3">Mis Pedidos</h1>
+
+@* if there are items in the user's cart, show cart details *@
+@if (SignInManager.IsSignedIn(User) && Model.Orders.Count > 0)
+{
+    @foreach (var order in Model.Orders)
+    {
+        <div class="card p-4 my-4 bg-light">
+            <h2 class="text-primary fw-bold">@order.DateOrdered.ToLongDateString() <span class="fw-light">@order.DateOrdered.ToLocalTime().ToLongTimeString()</span></h2>
+            <strong>Order ID: @order.Id</strong>
+            <br />
+            <h4>Información Personal</h4>
+            <ul>
+                <li>Nombre: @order.FirstName</li>
+                <li>Apellido: @order.LastName</li>
+                <li>Email: @order.Email</li>
+            </ul>
+            <br />
+
+            <h4>Detalles de Envío</h4>
+            <ul>
+                <li>Dirección: @order.Address</li>
+                <li>Dirección 2: @order.Address2</li>
+                <li>País: @order.Country</li>
+                <li>Provincia: @order.Province</li>
+                <li>Código Postal: @order.PostalCode</li>
+            </ul>
+            <br />
+
+            <h4>Productos Pedidos</h4>
+            <ul>
+                @foreach (var product in order.OrderedProducts)
+                {
+                    <li>@product.Name &nbsp;<strong>x @product.CartQuantity</strong></li>
+                }
+            </ul>
+
+            <br />
+
+            <h2>Total: <span class="text-info fw-bold">@order.TotalCost.ToString("c2")</span></h2>
+        </div>
+    }
+}
+else if (SignInManager.IsSignedIn(User) && Model.Orders.Count == 0)
+{
+    <div class="text-center py-5">
+        <i class="fas fa-box fa-4x text-muted mb-3"></i>
+        <h3 class="text-muted">No has realizado ningún pedido</h3>
+        <p class="text-muted mb-4">Cuando realices un pedido, aparecerá aquí.</p>
+        <a href="/products" class="btn btn-primary btn-lg">
+            <i class="fas fa-store me-2"></i>Explorar Productos
+        </a>
+    </div>
+}
+else
+{
+    <div class="text-center py-5">
+        <i class="fas fa-box fa-4x text-muted mb-3"></i>
+        <h3 class="text-muted">Inicia sesión para ver tus pedidos</h3>
+        <p class="text-muted mb-4">Debes iniciar sesión para ver tu historial de pedidos.</p>
+        <a href="/Account/Login" class="btn btn-primary btn-lg me-2">Iniciar Sesión</a>
+        <a href="/Account/Register" class="btn btn-outline-primary btn-lg">Registrarse</a>
+    </div>
+}
+
+<br />
+<br />
+<br />
+<br />
+<br />

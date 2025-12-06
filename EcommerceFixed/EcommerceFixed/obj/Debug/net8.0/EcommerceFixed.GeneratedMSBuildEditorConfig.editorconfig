@@ -1,0 +1,169 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = EcommerceFixed
+build_property.RootNamespace = EcommerceFixed
+build_property.ProjectDir = C:\Users\holman\source\repos\progra-semi-2025\EcommerceFixed\EcommerceFixed\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\holman\source\repos\progra-semi-2025\EcommerceFixed\EcommerceFixed
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/holman/source/repos/progra-semi-2025/EcommerceFixed/EcommerceFixed/Pages/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/holman/source/repos/progra-semi-2025/EcommerceFixed/EcommerceFixed/Pages/Account/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/holman/source/repos/progra-semi-2025/EcommerceFixed/EcommerceFixed/Pages/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/holman/source/repos/progra-semi-2025/EcommerceFixed/EcommerceFixed/Pages/admin/categories/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWRtaW5cY2F0ZWdvcmllc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/holman/source/repos/progra-semi-2025/EcommerceFixed/EcommerceFixed/Pages/admin/categories/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWRtaW5cY2F0ZWdvcmllc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/holman/source/repos/progra-semi-2025/EcommerceFixed/EcommerceFixed/Pages/admin/categories/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWRtaW5cY2F0ZWdvcmllc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/holman/source/repos/progra-semi-2025/EcommerceFixed/EcommerceFixed/Pages/admin/categories/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWRtaW5cY2F0ZWdvcmllc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/holman/source/repos/progra-semi-2025/EcommerceFixed/EcommerceFixed/Pages/admin/categories/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWRtaW5cY2F0ZWdvcmllc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/holman/source/repos/progra-semi-2025/EcommerceFixed/EcommerceFixed/Pages/admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/holman/source/repos/progra-semi-2025/EcommerceFixed/EcommerceFixed/Pages/admin/products/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWRtaW5ccHJvZHVjdHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/holman/source/repos/progra-semi-2025/EcommerceFixed/EcommerceFixed/Pages/admin/products/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWRtaW5ccHJvZHVjdHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/holman/source/repos/progra-semi-2025/EcommerceFixed/EcommerceFixed/Pages/admin/products/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWRtaW5ccHJvZHVjdHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/holman/source/repos/progra-semi-2025/EcommerceFixed/EcommerceFixed/Pages/admin/products/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWRtaW5ccHJvZHVjdHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/holman/source/repos/progra-semi-2025/EcommerceFixed/EcommerceFixed/Pages/admin/products/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWRtaW5ccHJvZHVjdHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/holman/source/repos/progra-semi-2025/EcommerceFixed/EcommerceFixed/Pages/admin/Reviews/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWRtaW5cUmV2aWV3c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/holman/source/repos/progra-semi-2025/EcommerceFixed/EcommerceFixed/Pages/cart/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcY2FydFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/holman/source/repos/progra-semi-2025/EcommerceFixed/EcommerceFixed/Pages/categories/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcY2F0ZWdvcmllc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/holman/source/repos/progra-semi-2025/EcommerceFixed/EcommerceFixed/Pages/categories/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcY2F0ZWdvcmllc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/holman/source/repos/progra-semi-2025/EcommerceFixed/EcommerceFixed/Pages/categories/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcY2F0ZWdvcmllc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/holman/source/repos/progra-semi-2025/EcommerceFixed/EcommerceFixed/Pages/categories/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcY2F0ZWdvcmllc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/holman/source/repos/progra-semi-2025/EcommerceFixed/EcommerceFixed/Pages/categories/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcY2F0ZWdvcmllc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/holman/source/repos/progra-semi-2025/EcommerceFixed/EcommerceFixed/Pages/checkout/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcY2hlY2tvdXRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/holman/source/repos/progra-semi-2025/EcommerceFixed/EcommerceFixed/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/holman/source/repos/progra-semi-2025/EcommerceFixed/EcommerceFixed/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/holman/source/repos/progra-semi-2025/EcommerceFixed/EcommerceFixed/Pages/myorders/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcbXlvcmRlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/holman/source/repos/progra-semi-2025/EcommerceFixed/EcommerceFixed/Pages/products/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNccHJvZHVjdHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/holman/source/repos/progra-semi-2025/EcommerceFixed/EcommerceFixed/Pages/products/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNccHJvZHVjdHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/holman/source/repos/progra-semi-2025/EcommerceFixed/EcommerceFixed/Pages/Profile/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZmlsZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/holman/source/repos/progra-semi-2025/EcommerceFixed/EcommerceFixed/Pages/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/holman/source/repos/progra-semi-2025/EcommerceFixed/EcommerceFixed/Pages/Shared/_Toast.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Ub2FzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/holman/source/repos/progra-semi-2025/EcommerceFixed/EcommerceFixed/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/holman/source/repos/progra-semi-2025/EcommerceFixed/EcommerceFixed/Pages/Test.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/holman/source/repos/progra-semi-2025/EcommerceFixed/EcommerceFixed/Pages/TestDb.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVzdERiLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/holman/source/repos/progra-semi-2025/EcommerceFixed/EcommerceFixed/Pages/wishlist/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcd2lzaGxpc3RcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/holman/source/repos/progra-semi-2025/EcommerceFixed/EcommerceFixed/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/holman/source/repos/progra-semi-2025/EcommerceFixed/EcommerceFixed/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/holman/source/repos/progra-semi-2025/EcommerceFixed/EcommerceFixed/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-id9gu0kzne

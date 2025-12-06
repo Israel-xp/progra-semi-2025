@@ -1,0 +1,667 @@
+﻿@page
+@model EcommerceFixed.Pages.Account.RegisterModel
+
+@{
+    ViewData["Title"] = "Crear Cuenta | Urban Trends";
+}
+
+<div class="register-3d-container">
+    <!-- Fondo 3D Minimalista -->
+    <div class="bg-3d">
+        <div class="cube"></div>
+        <div class="sphere"></div>
+        <div class="pyramid"></div>
+    </div>
+
+    <!-- Tarjeta de Registro Flotante -->
+    <div class="register-card-3d">
+        <!-- Logo Flotante -->
+        <div class="floating-logo">
+            <i class="fas fa-crown"></i>
+        </div>
+
+        <!-- Encabezado Minimalista -->
+        <div class="header-3d">
+            <h1 class="title-3d">Crear Cuenta</h1>
+            <p class="subtitle-3d">Únete a la comunidad premium</p>
+        </div>
+
+        <!-- Mensajes Mejorados -->
+        @if (TempData["error"] != null)
+        {
+            <div class="message-3d error">
+                <i class="fas fa-exclamation-circle"></i>
+                <span>@TempData["error"]</span>
+            </div>
+        }
+
+        @if (TempData["success"] != null)
+        {
+            <div class="message-3d success">
+                <i class="fas fa-check-circle"></i>
+                <span>@TempData["success"]</span>
+            </div>
+        }
+
+        <!-- Formulario Minimalista -->
+        <form method="post" class="form-3d">
+            <div class="input-group-3d">
+                <div class="input-row">
+                    <div class="input-wrapper">
+                        <input asp-for="Input.FirstName" class="input-3d" placeholder=" " />
+                        <label class="label-3d">
+                            <i class="fas fa-user"></i>
+                            <span>Nombre</span>
+                        </label>
+                        <div class="input-line"></div>
+                    </div>
+                    <span asp-validation-for="Input.FirstName" class="error-3d"></span>
+                </div>
+
+                <div class="input-row">
+                    <div class="input-wrapper">
+                        <input asp-for="Input.LastName" class="input-3d" placeholder=" " />
+                        <label class="label-3d">
+                            <i class="fas fa-user"></i>
+                            <span>Apellido</span>
+                        </label>
+                        <div class="input-line"></div>
+                    </div>
+                    <span asp-validation-for="Input.LastName" class="error-3d"></span>
+                </div>
+            </div>
+
+            <div class="input-row">
+                <div class="input-wrapper">
+                    <input asp-for="Input.Email" class="input-3d" placeholder=" " />
+                    <label class="label-3d">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email</span>
+                    </label>
+                    <div class="input-line"></div>
+                </div>
+                <span asp-validation-for="Input.Email" class="error-3d"></span>
+            </div>
+
+            <div class="input-row">
+                <div class="input-wrapper">
+                    <input asp-for="Input.Password" type="password" class="input-3d" placeholder=" " />
+                    <label class="label-3d">
+                        <i class="fas fa-lock"></i>
+                        <span>Contraseña</span>
+                    </label>
+                    <button type="button" class="toggle-password-3d">
+                        <i class="fas fa-eye"></i>
+                    </button>
+                    <div class="input-line"></div>
+                </div>
+                <span asp-validation-for="Input.Password" class="error-3d"></span>
+            </div>
+
+            <div class="input-row">
+                <div class="input-wrapper">
+                    <input asp-for="Input.ConfirmPassword" type="password" class="input-3d" placeholder=" " />
+                    <label class="label-3d">
+                        <i class="fas fa-lock"></i>
+                        <span>Confirmar Contraseña</span>
+                    </label>
+                    <button type="button" class="toggle-password-3d">
+                        <i class="fas fa-eye"></i>
+                    </button>
+                    <div class="input-line"></div>
+                </div>
+                <span asp-validation-for="Input.ConfirmPassword" class="error-3d"></span>
+            </div>
+
+            <!-- Botón 3D -->
+            <button type="submit" class="btn-3d">
+                <span class="btn-text">Crear Cuenta</span>
+                <span class="btn-shadow"></span>
+                <i class="fas fa-arrow-right btn-icon"></i>
+            </button>
+        </form>
+
+        <!-- Enlace de Login -->
+        <div class="login-link-3d">
+            ¿Ya tienes cuenta?
+            <a asp-page="/Account/Login" class="link-3d">
+                Iniciar Sesión
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Partículas Flotantes -->
+    <div class="particles">
+        @for (int i = 0; i < 20; i++)
+        {
+            <div class="particle" style="--i:@i;"></div>
+        }
+    </div>
+</div>
+
+<style>
+    /* Variables Minimalistas */
+    :root {
+        --primary: #6366f1;
+        --primary-dark: #4f46e5;
+        --primary-light: #818cf8;
+        --accent: #f59e0b;
+        --dark: #0f172a;
+        --darker: #020617;
+        --light: #f8fafc;
+        --gray: #64748b;
+        --gradient: linear-gradient(135deg, var(--primary), var(--primary-light));
+        --shadow: 0 20px 40px rgba(0,0,0,0.3);
+        --shadow-3d: 0 40px 80px rgba(0,0,0,0.4);
+        --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    /* Container Principal 3D */
+    .register-3d-container {
+        min-height: 100vh;
+        background: var(--darker);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+        font-family: 'Inter', sans-serif;
+    }
+
+    /* Fondo 3D Animado */
+    .bg-3d {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        perspective: 1000px;
+    }
+
+    /* Figuras 3D */
+    .cube, .sphere, .pyramid {
+        position: absolute;
+        opacity: 0.1;
+        filter: blur(40px);
+        animation: float3d 8s ease-in-out infinite;
+    }
+
+    .cube {
+        width: 300px;
+        height: 300px;
+        background: var(--primary);
+        top: 10%;
+        left: 10%;
+        animation-delay: 0s;
+        border-radius: 20px;
+        transform: rotateX(45deg) rotateY(45deg);
+    }
+
+    .sphere {
+        width: 200px;
+        height: 200px;
+        background: var(--accent);
+        bottom: 20%;
+        right: 15%;
+        animation-delay: 2s;
+        border-radius: 50%;
+        transform: rotateX(60deg);
+    }
+
+    .pyramid {
+        width: 150px;
+        height: 150px;
+        background: var(--primary-light);
+        top: 40%;
+        right: 30%;
+        animation-delay: 4s;
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        transform: rotateY(45deg);
+    }
+
+    @@keyframes float3d {
+        0%, 100% {
+            transform: translateY(0) rotateX(45deg) rotateY(45deg);
+        }
+
+        50% {
+            transform: translateY(-30px) rotateX(60deg) rotateY(60deg);
+        }
+    }
+
+    /* Tarjeta 3D Flotante */
+    .register-card-3d {
+        width: 90%;
+        max-width: 400px;
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(20px);
+        border-radius: 24px;
+        padding: 2.5rem;
+        box-shadow: var(--shadow-3d);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        transform-style: preserve-3d;
+        animation: cardFloat 6s ease-in-out infinite;
+        position: relative;
+        z-index: 2;
+    }
+
+    @@keyframes cardFloat {
+        0%, 100% {
+            transform: translateY(0px) rotateX(0deg);
+        }
+
+        50% {
+            transform: translateY(-10px) rotateX(2deg);
+        }
+    }
+
+    /* Logo Flotante */
+    .floating-logo {
+        width: 60px;
+        height: 60px;
+        background: var(--gradient);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 1.5rem;
+        font-size: 1.5rem;
+        color: white;
+        box-shadow: 0 10px 30px rgba(99, 102, 241, 0.4);
+        animation: logoPulse 2s ease-in-out infinite;
+        position: relative;
+        z-index: 3;
+    }
+
+    @@keyframes logoPulse {
+        0%, 100% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.1);
+        }
+    }
+
+    /* Encabezado 3D */
+    .header-3d {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .title-3d {
+        font-size: 2.2rem;
+        font-weight: 800;
+        background: linear-gradient(45deg, #fff, var(--primary-light));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 0.5rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .subtitle-3d {
+        color: var(--gray);
+        font-size: 0.9rem;
+        letter-spacing: 0.5px;
+    }
+
+    /* Mensajes */
+    .message-3d {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 0.75rem 1rem;
+        border-radius: 12px;
+        margin-bottom: 1.5rem;
+        font-size: 0.9rem;
+        animation: slideDown 0.3s ease-out;
+    }
+
+        .message-3d.error {
+            background: rgba(239, 68, 68, 0.1);
+            color: #fca5a5;
+            border: 1px solid rgba(239, 68, 68, 0.2);
+        }
+
+        .message-3d.success {
+            background: rgba(34, 197, 94, 0.1);
+            color: #86efac;
+            border: 1px solid rgba(34, 197, 94, 0.2);
+        }
+
+    @@keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Formulario 3D */
+    .form-3d {
+        margin-bottom: 2rem;
+    }
+
+    .input-group-3d {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .input-row {
+        margin-bottom: 1.5rem;
+    }
+
+    .input-wrapper {
+        position: relative;
+    }
+
+    /* Inputs 3D Mejorados */
+    .input-3d {
+        width: 100%;
+        padding: 1rem 1rem 1rem 3rem;
+        background: rgba(255, 255, 255, 0.03);
+        border: 2px solid rgba(255, 255, 255, 0.1);
+        border-radius: 12px;
+        color: white;
+        font-size: 1rem;
+        transition: var(--transition);
+        outline: none;
+    }
+
+        .input-3d:focus {
+            border-color: var(--primary-light);
+            background: rgba(99, 102, 241, 0.05);
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+        }
+
+            .input-3d:focus + .label-3d {
+                color: var(--primary-light);
+                transform: translateY(-25px) scale(0.85);
+            }
+
+        .input-3d:not(:placeholder-shown) + .label-3d {
+            transform: translateY(-25px) scale(0.85);
+        }
+
+    .label-3d {
+        position: absolute;
+        top: 1rem;
+        left: 3rem;
+        color: var(--gray);
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        transition: var(--transition);
+        pointer-events: none;
+    }
+
+    .input-line {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0;
+        height: 2px;
+        background: var(--gradient);
+        transition: var(--transition);
+        transform: translateX(-50%);
+    }
+
+    .input-3d:focus ~ .input-line {
+        width: 100%;
+    }
+
+    /* Toggle de Contraseña */
+    .toggle-password-3d {
+        position: absolute;
+        right: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        background: none;
+        border: none;
+        color: var(--gray);
+        cursor: pointer;
+        font-size: 1rem;
+        transition: var(--transition);
+    }
+
+        .toggle-password-3d:hover {
+            color: var(--primary-light);
+        }
+
+    /* Errores */
+    .error-3d {
+        display: block;
+        color: #fca5a5;
+        font-size: 0.8rem;
+        margin-top: 0.5rem;
+        padding-left: 0.5rem;
+    }
+
+    /* Botón 3D Efecto */
+    .btn-3d {
+        width: 100%;
+        padding: 1rem;
+        background: var(--gradient);
+        border: none;
+        border-radius: 12px;
+        color: white;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: var(--transition);
+        position: relative;
+        overflow: hidden;
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.75rem;
+        letter-spacing: 1px;
+    }
+
+        .btn-3d:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 40px rgba(99, 102, 241, 0.4);
+        }
+
+        .btn-3d:active {
+            transform: translateY(1px);
+        }
+
+    .btn-shadow {
+        position: absolute;
+        bottom: -8px;
+        left: 10%;
+        width: 80%;
+        height: 20px;
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 50%;
+        filter: blur(10px);
+        transition: var(--transition);
+    }
+
+    .btn-3d:hover .btn-shadow {
+        width: 90%;
+        opacity: 0.5;
+    }
+
+    .btn-icon {
+        transition: transform 0.3s ease;
+    }
+
+    .btn-3d:hover .btn-icon {
+        transform: translateX(5px);
+    }
+
+    /* Enlace Login */
+    .login-link-3d {
+        text-align: center;
+        color: var(--gray);
+        font-size: 0.9rem;
+    }
+
+    .link-3d {
+        color: var(--primary-light);
+        text-decoration: none;
+        font-weight: 600;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.25rem;
+        transition: var(--transition);
+        margin-left: 0.5rem;
+    }
+
+        .link-3d:hover {
+            color: white;
+            gap: 0.5rem;
+        }
+
+    /* Partículas */
+    .particles {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .particle {
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        background: var(--primary-light);
+        border-radius: 50%;
+        animation: particleFloat 20s linear infinite;
+        opacity: 0.3;
+    }
+
+        .particle:nth-child(odd) {
+            background: var(--accent);
+        }
+
+    @@keyframes particleFloat {
+        0% {
+            transform: translateY(100vh) translateX(var(--x, 0));
+            opacity: 0;
+        }
+
+        10% {
+            opacity: 0.3;
+        }
+
+        90% {
+            opacity: 0.3;
+        }
+
+        100% {
+            transform: translateY(-100px) translateX(calc(var(--x, 0) + 100px));
+            opacity: 0;
+        }
+    }
+
+    /* Responsive */
+    @@media (max-width: 768px) {
+        .register-card-3d {
+            padding: 2rem;
+            margin: 1rem;
+        }
+
+        .input-group-3d {
+            grid-template-columns: 1fr;
+            gap: 0;
+        }
+
+        .title-3d {
+            font-size: 1.8rem;
+        }
+
+        .cube, .sphere, .pyramid {
+            display: none;
+        }
+    }
+
+    /* Efecto de brillo en hover */
+    .register-card-3d::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: linear-gradient(90deg, transparent, var(--primary-light), transparent);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .register-card-3d:hover::before {
+        opacity: 1;
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Toggle de contraseña
+        document.querySelectorAll('.toggle-password-3d').forEach(button => {
+            button.addEventListener('click', function() {
+                const input = this.closest('.input-wrapper').querySelector('.input-3d');
+                const icon = this.querySelector('i');
+
+                if (input.type === 'password') {
+                    input.type = 'text';
+                    icon.classList.remove('fa-eye');
+                    icon.classList.add('fa-eye-slash');
+                } else {
+                    input.type = 'password';
+                    icon.classList.remove('fa-eye-slash');
+                    icon.classList.add('fa-eye');
+                }
+            });
+        });
+
+        // Efecto de partículas dinámicas
+        const particlesContainer = document.querySelector('.particles');
+        const particlesCount = 20;
+
+        for (let i = 0; i < particlesCount; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            particle.style.setProperty('--i', i);
+            particle.style.left = `${Math.random() * 100}%`;
+            particle.style.animationDelay = `${Math.random() * 20}s`;
+            particlesContainer.appendChild(particle);
+        }
+
+        // Efecto de entrada para la tarjeta
+        const card = document.querySelector('.register-card-3d');
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(50px) rotateX(10deg)';
+
+        setTimeout(() => {
+            card.style.transition = 'opacity 0.8s ease, transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0) rotateX(0deg)';
+        }, 200);
+
+        // Efecto hover 3D en la tarjeta
+        card.addEventListener('mousemove', function(e) {
+            const x = (e.clientX - window.innerWidth / 2) / 30;
+            const y = (e.clientY - window.innerHeight / 2) / 30;
+
+            this.style.transform = `rotateY(${x}deg) rotateX(${-y}deg) translateY(-10px)`;
+        });
+
+        card.addEventListener('mouseleave', function() {
+            this.style.transform = 'rotateY(0deg) rotateX(0deg) translateY(0)';
+            this.style.transition = 'transform 0.5s ease';
+        });
+    });
+</script>
