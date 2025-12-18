@@ -1,0 +1,492 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Vehículos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #000;
+            color: #fff;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+            .header h1 {
+                font-size: 3em;
+                background: linear-gradient(135deg, #0ea5e9, #3b82f6);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+        .toolbar {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-transform: uppercase;
+        }
+
+        .primary {
+            background: linear-gradient(135deg, #0ea5e9, #3b82f6);
+            color: white;
+        }
+
+            .primary:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 5px 20px rgba(14, 165, 233, 0.5);
+            }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }
+
+            .modal.active {
+                display: flex;
+            }
+
+        .modalbox {
+            background: #1a1f3a;
+            border: 2px solid #3b82f6;
+            border-radius: 15px;
+            padding: 30px;
+            width: 90%;
+            max-width: 600px;
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+
+        .modaltitle {
+            color: #0ea5e9;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            border-bottom: 2px solid #3b82f6;
+            padding-bottom: 10px;
+        }
+
+        .close {
+            float: right;
+            font-size: 28px;
+            cursor: pointer;
+            color: #fff;
+            line-height: 20px;
+        }
+
+            .close:hover {
+                color: #ef4444;
+            }
+
+        .campo {
+            margin-bottom: 20px;
+        }
+
+            .campo label {
+                display: block;
+                color: #94a3b8;
+                margin-bottom: 8px;
+                font-weight: 600;
+            }
+
+            .campo input {
+                width: 100%;
+                padding: 12px;
+                background: #0f1629;
+                border: 2px solid #334155;
+                border-radius: 8px;
+                color: #fff;
+                font-size: 14px;
+            }
+
+                .campo input:focus {
+                    outline: none;
+                    border-color: #3b82f6;
+                }
+
+        .dos {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .searchbar {
+            background: #1a1f3a;
+            border: 2px solid #3b82f6;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            gap: 15px;
+            align-items: flex-end;
+        }
+
+            .searchbar input {
+                flex: 1;
+                padding: 12px;
+                background: #0f1629;
+                border: 2px solid #334155;
+                border-radius: 8px;
+                color: #fff;
+                font-size: 14px;
+            }
+
+                .searchbar input:focus {
+                    outline: none;
+                    border-color: #3b82f6;
+                }
+
+        .tablebox {
+            background: #1a1f3a;
+            border: 2px solid #3b82f6;
+            border-radius: 15px;
+            padding: 25px;
+            overflow-x: auto;
+        }
+
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+            .table thead {
+                background: linear-gradient(135deg, #0ea5e9, #3b82f6);
+            }
+
+            .table th {
+                padding: 15px;
+                text-align: left;
+                font-weight: 600;
+                text-transform: uppercase;
+                font-size: 0.85em;
+            }
+
+            .table td {
+                padding: 15px;
+                border-bottom: 1px solid #334155;
+            }
+
+            .table tbody tr:hover {
+                background: #242b47;
+            }
+
+        .btnaction {
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-right: 5px;
+        }
+
+        .edit {
+            background: #f59e0b;
+            color: #000;
+        }
+
+        .delete {
+            background: #ef4444;
+            color: #fff;
+        }
+
+        .notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 15px 25px;
+            border-radius: 10px;
+            font-weight: 600;
+            display: none;
+            z-index: 2000;
+        }
+
+        .success {
+            background: #10b981;
+            color: #fff;
+        }
+
+        .error {
+            background: #ef4444;
+            color: #fff;
+        }
+
+        @media (max-width: 768px) {
+            .dos {
+                grid-template-columns: 1fr;
+            }
+
+            .searchbar {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>SISTEMA GESTIÓN DE VEHÍCULOS</h1>
+        </div>
+
+        <div class="toolbar">
+            <button class="btn primary" onclick="openNew()"> Nuevo Vehículo</button>
+        </div>
+
+        <div class="searchbar">
+            <input type="text" id="search" placeholder="Buscar por marca o modelo...">
+            <button class="btn primary" onclick="searchVehicles()">Buscar </button>
+            <button class="btn primary" onclick="loadData()">Ver Todos</button>
+        </div>
+
+        <div class="tablebox">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>MARCA</th>
+                        <th>MODELO</th>
+                        <th>AÑO</th>
+                        <th>N° MOTOR</th>
+                        <th>N° CHASIS</th>
+                        <th>ACCIONES</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                    <tr>
+                        <td colspan="7" style="text-align: center;">Cargando...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modalbox">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 class="modaltitle" id="mtitle">Nuevo Vehículo</h2>
+            <form id="form">
+                <input type="hidden" id="vid">
+                <div class="dos">
+                    <div class="campo">
+                        <label>Marca</label>
+                        <input type="text" id="marca" required>
+                    </div>
+                    <div class="campo">
+                        <label>Modelo</label>
+                        <input type="text" id="modelo" required>
+                    </div>
+                </div>
+                <div class="dos">
+                    <div class="campo">
+                        <label>Año</label>
+                        <input type="number" id="year" required min="1900" max="2099">
+                    </div>
+                    <div class="campo">
+                        <label>N° Motor</label>
+                        <input type="text" id="motor" required maxlength="25">
+                    </div>
+                </div>
+                <div class="campo">
+                    <label>N° Chasis</label>
+                    <input type="text" id="chasis" required maxlength="25">
+                </div>
+                <button type="submit" class="btn primary" style="width: 100%; margin-top: 10px;">Guardar</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="notif" class="notification"></div>
+
+    <script>
+        const API = 'https://localhost:7022/api/Vehiculoes';
+
+        window.onload = () => loadData();
+
+        function showNotif(msg, type) {
+            const n = document.getElementById('notif');
+            n.textContent = msg;
+            n.className = `notification ${type}`;
+            n.style.display = 'block';
+            setTimeout(() => n.style.display = 'none', 3000);
+        }
+
+        function openNew() {
+            document.getElementById('modal').classList.add('active');
+            document.getElementById('mtitle').textContent = '➕ Nuevo Vehículo';
+            document.getElementById('form').reset();
+            document.getElementById('vid').value = '';
+        }
+
+        function closeModal() {
+            document.getElementById('modal').classList.remove('active');
+        }
+
+        async function loadData() {
+            try {
+                const res = await fetch(API);
+                const data = await res.json();
+                render(data);
+            } catch (e) {
+                showNotif('Error: ' + e.message, 'error');
+            }
+        }
+
+        async function searchVehicles() {
+            const q = document.getElementById('search').value;
+            if (!q) {
+                loadData();
+                return;
+            }
+
+            try {
+                const res = await fetch(`${API}/buscar?buscar=${encodeURIComponent(q)}`);
+                const data = await res.json();
+                render(data);
+                if (data.length === 0) {
+                    showNotif('Sin resultados', 'error');
+                }
+            } catch (e) {
+                showNotif('Error: ' + e.message, 'error');
+            }
+        }
+
+        function render(data) {
+            const tb = document.getElementById('tbody');
+            if (data.length === 0) {
+                tb.innerHTML = '<tr><td colspan="7" style="text-align: center;">Sin registros</td></tr>';
+                return;
+            }
+
+            tb.innerHTML = data.map(v => `
+                <tr>
+                    <td>${v.idVehiculo}</td>
+                    <td>${v.marca}</td>
+                    <td>${v.modelo}</td>
+                    <td>${v.year}</td>
+                    <td>${v.num_motor}</td>
+                    <td>${v.num_chasis || 'N/A'}</td>
+                    <td>
+                        <button class="btnaction edit" onclick="edit(${v.idVehiculo})">Editar</button>
+                        <button class="btnaction delete" onclick="remove(${v.idVehiculo})">Eliminar</button>
+                    </td>
+                </tr>
+            `).join('');
+        }
+
+        document.getElementById('form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+
+            const id = document.getElementById('vid').value;
+            const obj = {
+                marca: document.getElementById('marca').value,
+                modelo: document.getElementById('modelo').value,
+                year: parseInt(document.getElementById('year').value),
+                num_motor: document.getElementById('motor').value,
+                num_chasis: document.getElementById('chasis').value
+            };
+
+            try {
+                let res;
+                if (id) {
+                    obj.idVehiculo = parseInt(id);
+                    res = await fetch(`${API}/${id}`, {
+                        method: 'PUT',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(obj)
+                    });
+                    showNotif('Actualizado', 'success');
+                } else {
+                    res = await fetch(API, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(obj)
+                    });
+                    showNotif('Registrado', 'success');
+                }
+
+                if (res.ok) {
+                    closeModal();
+                    loadData();
+                } else {
+                    showNotif('Error al guardar', 'error');
+                }
+            } catch (e) {
+                showNotif('Error: ' + e.message, 'error');
+            }
+        });
+
+        async function edit(id) {
+            try {
+                const res = await fetch(`${API}/${id}`);
+                const v = await res.json();
+
+                document.getElementById('vid').value = v.idVehiculo;
+                document.getElementById('marca').value = v.marca;
+                document.getElementById('modelo').value = v.modelo;
+                document.getElementById('year').value = v.year;
+                document.getElementById('motor').value = v.num_motor;
+                document.getElementById('chasis').value = v.num_chasis || v.Num_chasis;
+
+                document.getElementById('mtitle').textContent = '✏️ Editar Vehículo';
+                document.getElementById('modal').classList.add('active');
+            } catch (e) {
+                showNotif('Error: ' + e.message, 'error');
+            }
+        }
+
+        async function remove(id) {
+            if (!confirm('¿Eliminar este vehículo?')) return;
+
+            try {
+                const res = await fetch(`${API}/${id}`, { method: 'DELETE' });
+                if (res.ok) {
+                    showNotif('Eliminado', 'success');
+                    loadData();
+                } else {
+                    showNotif('Error al eliminar', 'error');
+                }
+            } catch (e) {
+                showNotif('Error: ' + e.message, 'error');
+            }
+        }
+
+        document.getElementById('modal').addEventListener('click', function(e) {
+            if (e.target === this) closeModal();
+        });
+    </script>
+</body>
+</html>
