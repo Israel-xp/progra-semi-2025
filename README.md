@@ -25,5 +25,4 @@ Codigo, ejemplos y practicas de la materia de Programacion Computacional 1
 * Menus y acceso rapidos, barras de herramientas, cuadros de dialogo
 * Creatividad e innovacion.
 
-# Justificacion
-*Quiero justificar un poco sobre las fechas de mis repositorios, actualmente no cuento con una computadora con la cual poder trabajar, también he tenido problemas con github me he creado varios repositorios pero en esté subi él proyecto completo por eso lo de la fecha.
+
